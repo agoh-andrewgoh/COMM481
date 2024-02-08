@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Andrew Goh</title>
+<style>
+	body {
+		font-family: "Metrophobic Regular";
+		margin: 0;
+		overflow-y:scroll;		
+	}
+	@font-face {
+    	font-family: 'Metrophobic Regular';
+    	src: url('fonts/Metrophobic-Regular.ttf') format('truetype');
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		min-height: 100vh;
+	}
+	.maintext { 
+		margin: 1%;
+		margin-bottom: 0.5%;
+	}
+	.maintext-underline {
+		width: 37.6%; 
+		height: 1vw;
+		margin-left: 41%;
+		margin-top: -1%;
+		background-color: #333;
+	}
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		justify-content: space-between;
+		margin-left: 62%;
+		margin-right: 1%;
+		margin-bottom: auto;
+		color: #333333;
+	}
+	.navigation p {
+		font-size: 2vw;
+		color: #333333;
+		font-weight: normal;
+		text-decoration: none;
+		margin: 0;
+		display: flex;
+		align-items: center;
+	}
+	.navigationline {
+		width: 499%;
+		height: 3%;
+		background-color: #333;
+		margin-top: 2.5%;
+		margin-left: -108%;
+		z-index: 2;
+	}
+	.logo img{
+		width: 7vw;
+		height: 7vw;
+		position: absolute;
+    	top: 0;
+    	left: 0.1%;
+    	margin-top: 0.1%;
+	}
+	/* Below affects homepage text */	
+	h1 {
+		font-size: 10vw;
+		color: #F47621;
+		font-weight: bold;
+		display: inline;
+	}
+	h2 {
+		font-size: 2.5vw;
+		margin: 0;
+		margin-left: 55%;
+		color: #478ECC;
+		font-weight: normal;
+	}
+	h3 {
+		font-size: 2vw;
+		margin-left: -0.8%;
+		color: #478ECC;
+		font-weight: normal;
+		display: inline;
+	}
+	/* Below affects the dropdown menu for Projects */	
+	.dropbutton {
+		font-family: "Metrophobic Regular";
+	    color: white;
+		font-size: 2vw;
+		color: #478ECC;
+		font-weight: normal;
+	    border: none;
+	}
+	.dropbutton:hover {
+		color: #F47621;
+	}
+	.dropdown-content {
+ 		display: none;
+  		position: absolute;
+		font-size: 1vw;
+  		z-index: 1;
+		background-color: white;
+	}
+	.dropdown-content a {
+ 		color: #333333;
+  		padding: 0.5vw 1vw;
+  		text-decoration: none;
+  		display: block;
+		margin-left: -0.9vw;
+}
+	.dropdown-content a:hover {color: #F47621;}
+	
+	.dropdown:hover .dropdown-content {display: block;}
+	
+	/* Below affects Links */	
+	#a1 {
+		font-size: 2vw;
+		color: #F47621;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	#a1:hover{
+		color: #478ECC;
+	}
+	.a2 {
+		font-size: 2vw;
+		color: #478ECC;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	.a2:hover {
+		color: #F47621;
+	}
+
+</style>
+</head>
+<body>
+    <div class="container">
+		<div class="navigation">
+			<a id = "a1" href = "index.html">Home</a>
+			<p>-</p>
+			<div class = "dropdown">
+				<div class = "dropbutton">Projects</div>
+				<div class = "dropdown-content">
+					<a href = "project1/Project1HTML.html">Project 1</a>
+					<a href = "project2/Project2.html">Project 2</a>
+					<a href = "inclass/Muybridge.html">Muybrige GIF</a>
+					<a href = "inclass/AndrewGoh_Unified/Unified.html">Unified</a>
+					<a href = "inclass/Week8/week8.html" target="_blank" onclick="window.open('inclass/Week8/week8.html', '_blank', 'width=900,height=625'); return false;">More Divs and Behaviors</a>
+					<a href = "project4/Project4.html">Project 4</a>
+				</div>
+			<div class ="navigationline"></div>
+			</div>
+			<p>-</p>
+			<a class = "a2" href = "aboutme.html">About me</a>
+			<p>-</p>
+			<a class = "a2" href = "contact.html">Contact</a>
+		</div>
+		<div class="maintext">
+			<h1>Andrew Goh</h1>
+			<h3>COMM 380: Portfolio</h3>
+			<div class ="maintext-underline"></div>
+			<h2>powerful. simple. this is my design.</h2>
+        </div>
+    </div>
+	<div class="maintext">
+			<h1>Project 4</h1>
+        </div>
+	<div class = "logo">
+		<img src = "images/AndrewGohLogo.png" alt = "Logo of Andrew Goh" >
+	</div>
+</body>
+</html>
+
