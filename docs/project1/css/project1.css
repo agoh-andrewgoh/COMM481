@@ -1,0 +1,139 @@
+@charset "UTF-8";
+html, body {
+	height: 100vh;
+}
+body {
+	font-family: 'Raleway', helvetica, arial, sans-serif;
+	background-image: url("../images/project1background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: darkorange;
+}
+#container {
+	max-width: 1000px;
+	margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding-bottom: 95px;
+	padding-left: 22px;
+	padding-right: 22px;
+	margin-top: 50px;
+}
+.navigation {
+	color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+/* SPRITES */
+
+#sprites {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	padding-top: 20px;
+	margin-bottom: -100px;
+}
+#riseagainst,
+#riseagainstalbum,
+#suisei,
+#midnight {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/sprite-art.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#riseagainst {
+	background-position: 0px 0px;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+#riseagainst:hover{
+	background-position: 0px -200px;
+    transform: rotate(-45deg);
+}
+#riseagainstalbum {
+	background-position: -200px 0px;
+	transform: scale(1) rotate(0deg);
+    transition: transform 0.5s cubic-bezier(0.25, 0.25, 0.25, 0.25);
+}
+#riseagainstalbum:hover{
+	background-position: -200px -200px;
+    transform: scale(1) rotate(360deg);
+}
+#suisei {
+	background-position: -400px 0px;
+    transition: all 0.5s linear;
+}
+#suisei:hover{
+	background-position: -400px -200px;
+}
+#midnight {
+	background-position: -600px 0px;
+    transition: all 0.5s linear;
+}
+#midnight:hover{
+	background-position: -600px -200px;
+}
+/* Dropdown menu content */
+nav {
+	height: 25px;
+}
+a {
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	line-height: 35px;
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+
+}
+.dropdown {
+	height: 0;
+	width: 200px;
+}
+.dropdown-content {
+    position: absolute;
+    z-index: 1;
+	border-radius: 20px;
+	padding: 0px 8px;
+	overflow: hidden;
+	transition: max-height 1s ease;
+	max-height: 0;
+	width: 200px;
+}
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+	border-radius: 20px;
+	padding: 5px 10px;
+    margin: 5px;
+	margin-left: -8px;
+	margin-right: 8px;
+    border-bottom: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+    transition: background-color 0.3s;
+}
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+}
+/*Changes Nondropdown items only the main button ie inspiration */
+.dropbutton {
+    background: rgba(255, 127, 0, 0.5);
+    border-radius: 20px;
+    padding: 3px 8px;
+    border: none;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.dropbutton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+}

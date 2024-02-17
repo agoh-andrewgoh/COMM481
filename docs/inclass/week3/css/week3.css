@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* COLORS USED, ETC
+	
+	Light Orange: #ED9729
+
+	Dark Orange: #EF8428
+	
+	Yellow: #FED92B
+	
+	Type Size: .8em
+
+*/
+
+body {
+	margin-top: 100px;
+	font-family: 'Raleway', helvetica, arial, sans-serif;
+}
+header {
+}
+#container {
+	width: 600px;
+	margin: 0 auto;
+}
+.navigation {
+	color: #333333;
+	display: flex;
+	}
+/* SPRITES */
+
+header {
+}
+
+#idea {
+	width: 150px;
+	height: 150px;
+	margin-right: 75px;
+	background-image: url("../images/sprite-art.gif");
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+#idea:hover{
+	background-position: 0px -150px;
+    transform: rotate(-45deg);
+}
+
+#brain {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: -150px;
+	background-image: url("../images/sprite-art.gif");
+	background-position: -150px 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	transform: scale(1) rotate(0deg);
+    transition: transform 0.5s cubic-bezier(0.25, 0.25, 0.25, 0.25);
+}
+#brain:hover{
+	background-position: -150px -150px;
+    transform: scale(1) rotate(180deg);
+}
+
+#books {
+	width: 150px;
+	height: 150px;
+	margin-left: 450px;
+	margin-top: -150px;
+	background-image: url("../images/sprite-art.gif");
+	background-position: -300px 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+    transition: all 0.5s linear;
+}
+#books:hover{
+	background-position: -300px -150px;
+}
+/* HORIZONTAL MENU */
+
+nav {
+	margin-top: 50px;
+	height: 23px;
+}
+
+a {
+	color: #333;
+	font-size: 0.8em;
+	text-decoration: none;
+	width: 100px;
+	line-height: 35px;
+	display: flex;
+	justify-content:space-around;	
+}
+a.color {
+	background-color: orange;
+}
+a.color:hover{
+	background-color: antiquewhite;
+	color: red;
+}
+a.color2 {
+	background-color: aquamarine;
+}
+a.color2:hover {
+	background-color: rosybrown;
+	color: red;
+}
