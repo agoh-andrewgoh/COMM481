@@ -53,12 +53,11 @@ body {
 }
 #riseagainst {
 	background-position: 0px 0px;
-	transform: scale(1) rotate(0deg);
-    transition: transform 0.5s cubic-bezier(0.25, 0.25, 0.25, 0.25);
+    transition: transform 0.5s ease-in-out, background-position 0.5s 0.5s;
 }
 #riseagainst:hover{
 	background-position: 0px -200px;
-    transform: scale(1) rotate(-360deg);
+    transform: rotateX(360deg);
 }
 #riseagainstalbum {
 	background-position: -200px 0px;
@@ -71,17 +70,18 @@ body {
 }
 #suisei {
 	background-position: -400px 0px;
-    transition: all 0.5s linear;
+    transition: background-position 0.6s ease-in-out;
 }
 #suisei:hover{
 	background-position: -400px -200px;
 }
 #midnight {
 	background-position: -600px 0px;
-    transition: all 0.5s linear;
+    transition: transform 0.5s ease-in-out, background-position 0.5s 0.5s;
 }
-#midnight:hover{
+#midnight:hover {
 	background-position: -600px -200px;
+    transform: rotateY(360deg);
 }
 /* Dropdown menu content */
 nav {
@@ -121,7 +121,7 @@ a {
 	margin-left: -8px;
 	margin-right: 8px;
     border-bottom: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
 	text-align: center;
     transition: background-color 0.3s;
