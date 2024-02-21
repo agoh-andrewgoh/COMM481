@@ -3,7 +3,7 @@ html, body {
 	height: 100vh;
 }
 body {
-	font-family: 'Raleway', helvetica, arial, sans-serif;
+	font-family: 'Roboto';
 	background-image: url("../images/project1background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
