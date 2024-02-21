@@ -7,7 +7,7 @@ body {
 	background-image: url("../project1/images/project1background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	background-color: #498ACF;
 }
 #container {
 	max-width: 1000px;
