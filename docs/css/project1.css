@@ -4,7 +4,7 @@ html, body {
 }
 body {
 	font-family: 'Roboto';
-	background-image: url("../images/project1background.jpg");
+	background-image: url("../project1/images/project1background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: darkorange;
@@ -127,12 +127,12 @@ a {
     transition: background-color 0.3s;
 }
 .dropdown-content a:hover {
-    background-color: #FF7321;
+    background-color: #EF8945;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
 }
 /*Changes Nondropdown items only the main button ie inspiration */
 .dropbutton {
-    background-color: #498ACF;
+    background-color: #EF8945;
     border-radius: 20px;
     padding: 3px 8px;
     border: none;
@@ -140,6 +140,6 @@ a {
     transition: background-color 0.3s;
 }
 .dropbutton:hover {
-    background-color: #FF7321;
+    background-color: #498ACF;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
 }
