@@ -3,8 +3,8 @@ html, body {
 	height: 100vh;
 }
 body {
-	font-family: 'Roboto Light';
-	background-image: url("../project1/images/project1background.jpg");
+	font-family: 'Roboto';
+	background-image: url("../images/terra.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #498ACF;
@@ -26,6 +26,13 @@ body {
     display: flex;
     justify-content: space-between;
 
+}
+h1 {
+	color: white;
+	font-family: 'Midnight';
+	text-align: center;
+    transform: translateY(25px);
+	font-size: 10vw;
 }
 /* SPRITES */
 
@@ -120,18 +127,18 @@ a {
 	margin-left: -8px;
 	margin-right: 8px;
     border-bottom: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 150, 255, 0.8);
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
 	text-align: center;
     transition: background-color 0.3s;
 }
 .dropdown-content a:hover {
-    background-color: #EF8945;
+    background: rgba(0, 50, 200, 0.85);
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
 }
 /*Changes Nondropdown items only the main button ie inspiration */
 .dropbutton {
-    background-color: #EF8945;
+    background: rgba(0, 150, 255, 0.8);
     border-radius: 20px;
     padding: 3px 8px;
     border: none;
@@ -139,6 +146,6 @@ a {
     transition: background-color 0.3s;
 }
 .dropbutton:hover {
-    background-color: #498ACF;
+    background: rgba(0, 50, 200, 0.85);
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
 }
