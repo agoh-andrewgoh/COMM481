@@ -3,7 +3,7 @@ html, body {
 	height: 100vh;
 }
 body {
-	font-family: 'Roboto';
+	font-family: 'Roboto Light';
 	background-image: url("../project1/images/project1background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -107,7 +107,7 @@ a {
 	border-radius: 20px;
 	padding: 0px 8px;
 	overflow: hidden;
-	transition: max-height 1s ease;
+	transition: max-height 0.7s ease;
 	max-height: 0;
 	width: 200px;
 }

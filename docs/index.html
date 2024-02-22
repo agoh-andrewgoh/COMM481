@@ -8,29 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var dropdowns = document.querySelectorAll('.dropdown');
 
     dropdowns.forEach(function(dropdown) {
+        var dropdownContent = dropdown.querySelector('.dropdown-content');
+
         dropdown.addEventListener('mouseover', function() {
-            var dropdownContent = this.querySelector('.dropdown-content');
-            var dropdownItems = dropdownContent.children;
-            var dropdownHeight = 0;
-
-            for (var i = 0; i < dropdownItems.length; i++) {
-                var itemHeight = dropdownItems[i].offsetHeight;
-                var itemStyles = window.getComputedStyle(dropdownItems[i]);
-                var itemMarginTop = parseInt(itemStyles.marginTop);
-                var itemMarginBottom = parseInt(itemStyles.marginBottom);
-                var itemPaddingTop = parseInt(itemStyles.paddingTop);
-                var itemPaddingBottom = parseInt(itemStyles.paddingBottom);
-                var itemBorderTop = parseInt(itemStyles.borderTopWidth);
-                var itemBorderBottom = parseInt(itemStyles.borderBottomWidth);
-
-                dropdownHeight += itemHeight + itemMarginTop + itemMarginBottom + itemPaddingTop + itemPaddingBottom + itemBorderTop + itemBorderBottom;
-            }
-
-            dropdownContent.style.maxHeight = dropdownHeight + 'px';
+            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
         });
 
         dropdown.addEventListener('mouseleave', function() {
-            var dropdownContent = this.querySelector('.dropdown-content');
             dropdownContent.style.maxHeight = '0';
         });
     });
