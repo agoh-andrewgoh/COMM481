@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* GLOBAL STYLES */
+body {
+	background-color: black;
+}
+#wrapper {
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#wrapper div {
+	width: 10%;
+}
+img {
+	width: 100%;
+	display: block;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1000px) {
+  #wrapper div {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #wrapper div {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #wrapper div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #wrapper div {
+    width: 100%;
+  }
+}
