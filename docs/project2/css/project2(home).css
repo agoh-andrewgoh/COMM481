@@ -1,39 +1,86 @@
 /* Mobile CSS settings*/
-@media only screen and (min-width: 450px) {
-h1 {
-    font-size: 7em;
-    color: #FFD14B;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-h2 {
-    margin-top: 0px;
-    font-size: 5em;
-}
-h3 {
-    font-size: 3em;
-    margin-top: -30px;
-}
-h4 {
-    font-size: 1.5em;
-}
-}
-@media only screen and (min-width: 450px) and (max-width: 1024px) {
-h1 {
-    font-size: 7em;
-    color: #FFD14B;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-h2 {
-    margin-top: 0px;
-    font-size: 5em;
-}
-h3 {
-    font-size: 3em;
-    margin-top: -30px;
-}
-h4 {
-    font-size: 1.5em;
-}
+@media only screen and (min-width: 320px) {
+	h1 {
+		font-size: 6em;
+		color: #FFD14B;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	h2 {
+		margin-top: 0px;
+		font-size: 5em;
+	}
+	h3 {
+		font-size: 3em;
+		margin-top: -30px;
+	}
+	h4 {
+		font-size: 1.5em;
+	}
+	}
+/* Tablet CSS settings*/
+@media only screen and (min-width: 768px){
+	h1 {
+		font-size: 8em;
+		text-align: left;
+		white-space: nowrap;
+	}
+	h2 {
+		font-size: 5em;
+		text-align: left;
+	}
+	h3 {
+		font-size: 3em;
+		text-align: left;
+	}
+	.borders {
+		width: 100%;
+	}
+	#poohbear {
+		width: 50%;
+		margin-top: -200px;
+	}
+	.pooh-container {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.pooh-container h4 {
+		position: absolute;
+		top: 0%;
+		left: 33.4%;
+		transform: translate(-50%, -50%);
+		text-align: left;
+	}
+	h4 {
+		font-size: 1.5em;
+	}
+	nav {
+		font-size: 2em;
+		margin-top: -10px;
+		display: flex;
+		justify-content: flex-start;
+	}
+	nav a {
+		width: 10%;
+		text-decoration: none;
+		color: black;
+	}
+	#color {
+		color: #F3BC00;
+	}
+	#color:hover {
+		color:black;
+	}
+	.color2:hover {
+		color: #F3BC00;
+	}
+	#arrow {
+		width: 75px;
+		margin-top: -5px;
+	}
+	#arrow:hover {
+		filter: invert(75%) sepia(100%) saturate(789%) hue-rotate(342deg) brightness(92%) contrast(101%);
+		}
+
 }
