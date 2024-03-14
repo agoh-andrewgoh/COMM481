@@ -17,7 +17,7 @@
 	h4 {
 		font-size: 1.5em;
 	}
-	}
+}
 /* Tablet CSS settings*/
 @media only screen and (min-width: 768px){
 	h1 {
@@ -38,7 +38,6 @@
 	}
 	#poohbear {
 		width: 50%;
-		margin-top: -200px;
 	}
 	.pooh-container {
 		position: relative;
