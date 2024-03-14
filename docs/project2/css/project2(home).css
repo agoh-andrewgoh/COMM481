@@ -23,7 +23,6 @@
 	h1 {
 		font-size: 8em;
 		text-align: left;
-		white-space: nowrap;
 	}
 	h2 {
 		font-size: 5em;
@@ -37,52 +36,15 @@
 		width: 100%;
 	}
 	#poohbear {
-		width: 50%;
-		top: 0%;
-		left: 50%;
-		transform: translate(0%, -25%);
-	}
-	.pooh-container {
-		position: relative;
-		display: flex;
-		justify-content: flex-end;
-	}
-	.pooh-container h4 {
-		position: absolute;
-		top: 0%;
-		left: 33.4%;
-		transform: translate(-50%, -50%);
-		text-align: left;
+		width: 100%;
 	}
 	h4 {
 		font-size: 1.5em;
+		text-align: left;
 	}
 	nav {
 		font-size: 2em;
-		margin-top: -10px;
 		display: flex;
 		justify-content: flex-start;
 	}
-	nav a {
-		width: 10%;
-		text-decoration: none;
-		color: black;
-	}
-	#color {
-		color: #F3BC00;
-	}
-	#color:hover {
-		color:black;
-	}
-	.color2:hover {
-		color: #F3BC00;
-	}
-	#arrow {
-		width: 75px;
-		margin-top: -5px;
-	}
-	#arrow:hover {
-		filter: invert(75%) sepia(100%) saturate(789%) hue-rotate(342deg) brightness(92%) contrast(101%);
-		}
-
 }
