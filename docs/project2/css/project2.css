@@ -1,0 +1,151 @@
+@charset "UTF-8";
+html, body {
+	height: 100vh;
+}
+body {
+	font-family: 'Roboto';
+	background-image: url("../images/terra.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #121C6A;
+}
+#container {
+	max-width: 1000px;
+	margin: 0 auto;
+    transform: translateY(50px);
+    background: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	padding-bottom: 95px;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+.navigation {
+	color: #333333;
+    display: flex;
+    justify-content: space-between;
+
+}
+h1 {
+	color: white;
+	font-family: 'Midnight';
+	text-align: center;
+    transform: translateY(25px);
+	font-size: 10vw;
+}
+/* SPRITES */
+
+#sprites {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	padding-top: 20px;
+	margin-bottom: -100px;
+
+
+}
+#riseagainst,
+#riseagainstalbum,
+#suisei,
+#midnight {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/sprite-art.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+#riseagainst {
+	background-position: 0px 0px;
+    transition: transform 0.5s ease-in-out, background-position 0.5s 0.5s;
+}
+#riseagainst:hover{
+	background-position: 0px -200px;
+    transform: rotateX(360deg);
+}
+#riseagainstalbum {
+	background-position: -200px 0px;
+	transform: scale(1) rotate(0deg);
+    transition: transform 0.5s cubic-bezier(0.25, 0.25, 0.25, 0.25);
+}
+#riseagainstalbum:hover{
+	background-position: -200px -200px;
+    transform: scale(1) rotate(360deg);
+}
+#suisei {
+	background-position: -400px 0px;
+    transition: background-position 0.6s ease-in-out;
+}
+#suisei:hover{
+	background-position: -400px -200px;
+}
+#midnight {
+	background-position: -600px 0px;
+    transition: transform 0.5s ease-in-out, background-position 0.5s 0.5s;
+}
+#midnight:hover {
+	background-position: -600px -200px;
+    transform: rotateY(360deg);
+}
+/* Dropdown menu content */
+nav {
+	height: 25px;
+}
+a {
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	line-height: 35px;
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+
+}
+.dropdown {
+	height: 0;
+	width: 200px;
+
+}
+.dropdown-content {
+    position: absolute;
+    z-index: 1;
+	border-radius: 20px;
+	padding: 0px 8px;
+	overflow: hidden;
+	transition: max-height 0.7s ease;
+	max-height: 0;
+	width: 200px;
+}
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+	border-radius: 20px;
+	padding: 5px 10px;
+    margin: 5px;
+	margin-left: -8px;
+	margin-right: 8px;
+    border-bottom: 1px solid transparent;
+    background: rgba(0, 150, 255, 0.8);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+    transition: background-color 0.3s;
+}
+.dropdown-content a:hover {
+    background: rgba(0, 50, 200, 0.85);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+}
+/*Changes Nondropdown items only the main button ie inspiration */
+.dropbutton {
+    background: rgba(0, 150, 255, 0.8);
+    border-radius: 20px;
+    padding: 3px 8px;
+    border: none;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.dropbutton:hover {
+    background: rgba(0, 50, 200, 0.85);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+}
