@@ -38,6 +38,9 @@
 	}
 	#poohbear {
 		width: 50%;
+		top: 0%;
+		left: 50%;
+		transform: translate(0%, -25%);
 	}
 	.pooh-container {
 		position: relative;
