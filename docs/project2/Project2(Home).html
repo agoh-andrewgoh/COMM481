@@ -12,7 +12,11 @@
 }
 body{
     background-color: #FFF7E7;
+	background-image: url("images/paperbackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
     font-family: callienpooh;
+    z-index: 1;
 }
 h1 {
     font-size: 5em;
@@ -35,6 +39,11 @@ h3 {
 .borders {
     width: 100%;
 }
+#imgcontainer {
+}
+.poohimages {
+	width: 0%;
+}
 #poohbear {
     width: 100%;
 }
@@ -50,6 +59,7 @@ nav {
 	font-size: 2em;
 	margin-top: 25px;
 	margin-bottom: -9px;
+	margin-left: 10px;
 }
 nav a {
 	width: 10%;
@@ -82,6 +92,12 @@ nav a {
 <img src = "images/line-big_bottom.png" alt = "Border for header" class = "borders">
 <h2>Chapter One</h2>
 <h3>By: A.A. Milne</h3>
+	
+<div id = "imgcontainer">
+	<img src = "images/nav-pooh1-over.png" alt = "Poohbear Image 1" class = "poohimages">
+	<img src = "images/nav-pooh2-over.png" alt = "Poohbear Image 2" class = "poohimages">
+	<img src = "images/nav-pooh3-over.png" alt = "Poohbear Image 3" class = "poohimages">
+</div>
 
 <img src="images/pooh7.png" alt="Image of Poohbear and Christopher Robin" id= "poohbear">
 <h4>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h4>
