@@ -5,54 +5,70 @@
 <title>Project 2: Winnie-the-Pooh</title>
 <style>
 /* Styles for smartphones */
-	@media (min-width: 320px) {
-	  }
-	@font-face {
-    font-family: callienpooh;
-    src: url('fonts/callienpooh.ttf') format('truetype');
-	}
-	body{
-		background-color: #FFF7E7;
-		font-family: callienpooh;
-		text-align: center;
-		width: 100%;
-		min-width: 250px;
-		max-width: 1650px;
-		overflow-x: hidden;
-	}
-	h1 {
-		font-size: 5em;
-		color: #FFD14B;
-	    margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	h2 {
-		margin-top: 0px;
-		font-size: 3em;
-	}
-	h3 {
-		font-size: 1.2em;
-		margin-top: -30px;
-	}
-	.borders {
-		max-width: 100%;
-	}
-	#poohbear {
-		max-width: 75%;
-	}
-    .pooh-container {
-        position: relative;
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    #poohbear {
+        max-width: 100%;
     }
     .pooh-container h4 {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        font-size: 1em;
     }
-	h4 {
-		font-size: 1.5em;
-		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
-	}
+}
+/* Common Styles */
+@font-face {
+    font-family: callienpooh;
+    src: url('fonts/callienpooh.ttf') format('truetype');
+}
+body{
+    background-color: #FFF7E7;
+    font-family: callienpooh;
+    text-align: center;
+    width: 100%;
+    min-width: 250px;
+    max-width: 1650px;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 5em;
+    color: #FFD14B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2 {
+    margin-top: 0px;
+    font-size: 3em;
+}
+h3 {
+    font-size: 1.2em;
+    margin-top: -30px;
+}
+.borders {
+    max-width: 100%;
+}
+#poohbear {
+    max-width: 75%;
+}
+.pooh-container {
+    position: relative;
+}
+.pooh-container h4 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h4 {
+    font-size: 1.5em;
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+}
 </style>
 </head>
 <body>
