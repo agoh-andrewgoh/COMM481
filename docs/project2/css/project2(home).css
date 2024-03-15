@@ -90,7 +90,9 @@
 		display: flex;
     }
     .borders {
-        width: 100%;
+        width: 50%;
+		display: flex;
+		margin: 0 auto;
     }
 
     #poohbear {
