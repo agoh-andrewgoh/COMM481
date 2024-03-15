@@ -14,7 +14,7 @@ body{
     background-color: #FFF7E7;
 	background-image: url("images/paperbackground.png");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
     font-family: callienpooh;
     z-index: 1;
 }
@@ -47,10 +47,13 @@ h3 {
 #poohbear {
     width: 100%;
 }
-h4 {
+h4,h5 {
 	text-align: center;
     font-size: 1.5em;
     font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+}
+h5 {
+	display: none;
 }
 nav {
 	display: flex;
@@ -67,7 +70,7 @@ nav a {
 	color: black;
 }
 #color {
-	color: #F3BC00;
+	color: white;
 }
 #color:hover {
 	color:black;
@@ -86,22 +89,17 @@ nav a {
 <link href = "css/project2(home).css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
+<div id = "wrapper">
 <img src = "images/line-big_top.png" alt = "Border for header" class = "borders">
 <h1>Winnie the Pooh</h1>
 <img src = "images/line-big_bottom.png" alt = "Border for header" class = "borders">
 <h2>Chapter One</h2>
 <h3>By: A.A. Milne</h3>
-	
-<div id = "imgcontainer">
-	<img src = "images/nav-pooh1-over.png" alt = "Poohbear Image 1" class = "poohimages">
-	<img src = "images/nav-pooh2-over.png" alt = "Poohbear Image 2" class = "poohimages">
-	<img src = "images/nav-pooh3-over.png" alt = "Poohbear Image 3" class = "poohimages">
-</div>
-
 <img src="images/pooh7.png" alt="Image of Poohbear and Christopher Robin" id= "poohbear">
 <h4>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h4>
+</div>
 
+<div id = "container">
 <nav>
 <a href ="#" id = "color">1</a>
 <a href ="#" class = "color2">2</a>
@@ -109,8 +107,9 @@ nav a {
 <a href ="#" class = "color2">4</a>
 <a href ="#" class = "color2">5</a>
 <a href ="#"><img src = "images/arrow.png" alt = "Arrow to next page" id = "arrow"></a>
+<div id = "blockquote"><h5>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h5></div>
 </nav>
-
+</div>
 	
 </body>
 </html>
