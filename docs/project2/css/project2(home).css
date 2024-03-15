@@ -20,12 +20,14 @@
 	h5 {
 		display: none;
 	}
+	#color {
+		color: #F3BC00;
+	}
 }
 /* Tablet CSS settings*/
 @media only screen and (min-width: 768px) and (max-width: 1204px){
 	h1 {
 		font-size: 8em;
-		color: #F3BC00;
 		text-align: left;
 	}
 	h2 {
@@ -54,6 +56,9 @@
 		display: flex;
 		justify-content: flex-start;
 		margin-left: 0px;
+	}
+	#color {
+		color: #F3BC00;
 	}
 }
 @media only screen and (min-width: 1205px) {
