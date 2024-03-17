@@ -1,0 +1,42 @@
+@charset "utf-8";
+@media only screen and (min-width: 768px) and (max-width: 1204px){
+	h1 {
+		font-size: 8em;
+		text-align: left;
+	}
+	.borders {
+		width: 75%;
+		margin-left: 0;
+	}
+	section {
+		display: flex;
+		flex-direction: unset;
+		margin-left: 0;
+		width: 100%;
+	}
+	h4 {
+		font-size: 1.5em;
+		margin-left: 12px;
+	}
+	p {
+		padding-right: 10px;
+	}
+	#image1 {
+		width: 60%;
+		margin-top: -80px;
+        float: right;
+		shape-outside: url("../images/pooh6.png");
+	}
+	#image2 {
+		width: 50%;
+		margin-top: 0px;
+        float: left;
+		shape-outside: url("../images/pooh11.png");	
+	}
+	#image3{
+		width: 50%;
+		margin-top: 0px;
+        float: left;
+		shape-outside: url("../images/pooh12.png");	
+	}
+}

@@ -3,12 +3,118 @@
 <head>
 <meta charset="utf-8">
 <title>Project 2: Winnie the Pooh Page: 5</title>
+<style>
+/* Default CSS settings*/
+	@font-face {
+	font-family: callienpooh;
+	src: url('fonts/callienpooh.ttf') format('truetype');
+	}
+	body{
+		background-color: #FFF7E7;
+		background-image: url("images/paperbackground.png");
+		background-size: cover;
+		background-repeat: repeat;
+		font-family: callienpooh;
+		z-index: 1;
+	}
+	h1 {
+		font-size: 5em;
+		color: #F3BC00;		
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+		text-align: center;
+	}
+	h2 {
+		margin-top: 0px;
+		font-size: 3em;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1.2em;
+		margin-top: -30px;
+		text-align: center;
+	}
+	.borders {
+		width: 100%;
+	}
+	#imgcontainer {
+	}
+	.poohimages {
+		width: 0%;
+	}
+	#poohbear {
+		width: 100%;
+	}
+	h4 {
+		text-align: center;
+		font-size: 1.5em;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+	}
+	h5 {
+		display: none;
+	}
+	section { 
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 80%;
+		font-size: 1.5em;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+	}
+	p {
+		padding-left: 15px;
+	}
+	container {
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		font-size: 2em;
+		margin-top: 25px;
+		margin-bottom: -9px;
+		margin-left: 10px;
+	}
+	nav a {
+		margin: 0 auto;
+		text-decoration: none;
+		color: black;
+	}
+	#color {
+		color: #F3BC00;
+	}
+	#color:hover {
+		color:black;
+	}
+	.color2:hover {
+		color: #F3BC00;
+	}
+	#arrow,#arrowreverse {
+		width: 75px;
+		margin-top: -5px;
+	}
+	#arrow:hover,#arrowreverse:hover {
+		filter: invert(75%) sepia(100%) saturate(789%) hue-rotate(342deg) brightness(92%) contrast(101%);
+		}
+}
+</style>
+<link href="project2(page5).css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+	
+<div id = "wrapper">
+<img src = "images/line-big_top.png" alt = "Border for header" class = "borders">
+<h1>Page Five</h1>
+<img src = "images/line-big_bottom.png" alt = "Border for header" class = "borders">
+</div>
+
+<section>
+<div>
 <p>The bees were still buzzing as suspiciously as ever. Some of them, indeed, left their nests and flew all round the cloud as it began the second verse of this song, and one bee sat down on the nose of the cloud for a moment, and then got up again.</p>
 <p>"Christopher—ow!—Robin," called out the cloud.</p>
-<img src ="#" alt = "Placeholder">
+<img src = "images/pooh13.png" alt = "Winnie the Pooh in the sky with some bees" id = "image1">
 <p>"Yes?"</p>
 <p>"I have just been thinking, and I have come to a very important decision. These are the wrong sort of bees."</p>
 <p>"Are they?"</p>
@@ -25,7 +131,7 @@
 <p>"Did I miss?" you asked.</p>
 <p>"You didn't exactly miss," said Pooh, "but you missed the balloon."</p>
 <p>"I'm so sorry," you said, and you fired again, and this time you hit the balloon, and the air came slowly out, and Winnie-the-Pooh floated down to the ground</p>
-<img src = "images/pooh14.jpg" alt = "Winnie the Pooh landing on the ground">
+<img src = "images/pooh14.png" alt = "Winnie the Pooh landing on the ground" id = "image2">
 <p>But his arms were so stiff from holding on to the string of the balloon all that time that they stayed up straight in the air for more than a week, and whenever a fly came and settled on his nose he had to blow it off. And I think—but I am not sure—that that is why he was always called Pooh.</p>
 <p>"Is that the end of the story?" asked Christopher Robin.</p>
 <p>"That's the end of that one. There are others."</p>
@@ -41,19 +147,26 @@
 <p>"I do remember," he said, "only Pooh doesn't very well, so that's why he likes having it told to him again. Because then it's a real story and not just a remembering."</p>
 <p>"That's just how I feel," I said.</p>
 <p>Christopher Robin gave a deep sigh, picked his Bear up by the leg, and walked off to the door, trailing Pooh behind him. At the door he turned and said, "Coming to see me have my bath?"</p>
-<img src = "images/pooh15.jpg" alt = "Christopher Robin taking a bath">
+<img src = "images/pooh15.png" alt = "Christopher Robin taking a bath" id = "image3">
 <p>"I might," I said.</p>
 <p>"I didn't hurt him when I shot him, did I?"</p>
 <p>"Not a bit."</p>
 <p>He nodded and went out, and in a moment I heard Winnie-the-Pooh—bump, bump, bump—going up the stairs behind him.</p>
-<img src = "images/nav-pooh1-over.png" alt = "Winnie the Pooh eating honey">
-<h5>Fin</h5>
+/* Insert Image here to replace blockquote when in big form*/
+<h4>Fin</h4>
+</div>
+</section>
+
+<div id = "container">
 <nav>
-<a href ="#">1</a>
-<a href ="#">2</a>
-<a href ="#">3</a>
-<a href ="#">4</a>
-<a href ="#">5</a>
+<a href ="Project2(Page4).html"><img src = "images/arrowreverse.png" alt = "Arrow to next page" id = "arrowreverse"></a>
+<a href ="Project2(Home).html" class = "color2">1</a>
+<a href ="Project2(Page2).html" class = "color2">2</a>
+<a href ="Project2(Page3).html" class = "color2">3</a>
+<a href ="Project2(Page4).html" class = "color2">4</a>
+<a href ="#" id = "color">5</a>
+<div id = "blockquote"><h5>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h5></div>
 </nav>
+</div>
 </body>
 </html>

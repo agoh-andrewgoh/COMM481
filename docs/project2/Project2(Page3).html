@@ -3,9 +3,119 @@
 <head>
 <meta charset="utf-8">
 <title>Project 2: Winnie-the-Pooh Page: 3</title>
+<style>
+/* Default CSS settings*/
+	@font-face {
+	font-family: callienpooh;
+	src: url('fonts/callienpooh.ttf') format('truetype');
+	}
+	body{
+		background-color: #FFF7E7;
+		background-image: url("images/paperbackground.png");
+		background-size: cover;
+		background-repeat: repeat;
+		font-family: callienpooh;
+		z-index: 1;
+	}
+	h1 {
+		font-size: 5em;
+		color: #F3BC00;		
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+		text-align: center;
+	}
+	h2 {
+		margin-top: 0px;
+		font-size: 3em;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1.2em;
+		margin-top: -30px;
+		text-align: center;
+	}
+	.borders {
+		width: 100%;
+	}
+	#imgcontainer {
+	}
+	.poohimages {
+		width: 0%;
+	}
+	#poohbear {
+		width: 100%;
+	}
+	h4,h5 {
+		text-align: center;
+		font-size: 1.5em;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+	}
+	h5 {
+		display: none;
+	}
+	section { 
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 80%;
+		font-size: 1.5em;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+	}
+	p {
+		padding-left: 15px;
+	}
+	container {
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		font-size: 2em;
+		margin-top: 25px;
+		margin-bottom: -9px;
+		margin-left: 10px;
+	}
+	nav a {
+		margin: 0 auto;
+		text-decoration: none;
+		color: black;
+	}
+	#color {
+		color: #F3BC00;
+	}
+	#color:hover {
+		color:black;
+	}
+	.color2:hover {
+		color: #F3BC00;
+	}
+	#arrow,#arrowreverse {
+		width: 75px;
+		margin-top: -5px;
+	}
+	#arrow:hover,#arrowreverse:hover {
+		filter: invert(75%) sepia(100%) saturate(789%) hue-rotate(342deg) brightness(92%) contrast(101%);
+		}
+	img {
+		width: 80%;
+		display: flex;
+		margin: 0 auto;
+	}
+}
+</style>
+<link href="css/project2(page3).css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<div id = "wrapper">
+<img src = "images/line-big_top.png" alt = "Border for header" class = "borders">
+<h1>Page Three</h1>
+<img src = "images/line-big_bottom.png" alt = "Border for header" class = "borders">
+</div>
+
+<section>
+<div>
 <p>Once upon a time, a very long time ago now, about last Friday, Winnie-the-Pooh lived in a forest all by himself under the name of Sanders.</p>
 <p>("What does 'under the name' mean?" asked Christopher Robin.</p>
 <p>"It means he had the name over the door in gold letters, and lived under it."</p>
@@ -14,40 +124,50 @@
 <p>"Then I will go on," said I.)</p>
 <p>One day when he was out walking, he came to an open place in the middle of the forest, and in the middle of this place was a large oak-tree, and, from the top of the tree, there came a loud buzzing-noise.</p>
 <p>Winnie-the-Pooh sat down at the foot of the tree, put his head between his paws and began to think.</p>
-<p>First of all he said to himself: "That buzzing-noise means something. You don't get a buzzing-noise like that, just buzzing and buzzing, without its meaning something. If there's a buzzing-noise, somebody's making a buzzing-noise, and the only reason for making a buzzing-noise that I know of is because you're a bee.</p>
+<p>First of all he said to himself: "That buzzing-noise means something. You don't get a buzzing-noise like that, just buzzing and buzzing, without its meaning something.</p>
+<p>If there's a buzzing-noise, somebody's making a buzzing-noise, and the only reason for making a buzzing-noise that I know of is because you're a bee.</p>
 <p>Then he thought another long time, and said:</p>
-<p>"And the only reason for being a bee that I know of is making honey."</p>
-<img src ="#" alt = "Buzzing Bees">
-<img src = "images/pooh2.jpg" alt = "Winnie the Pooh thinking and sitting">
-<p>And then he got up, and said: "And the only reason for making honey is so as I can eat it." So he began to climb the tree.</p>
+<p>"And the only reason for being a bee that <br>I know of is making honey."</p>
+<img src = "images/pooh2.png" alt = "Winnie the Pooh thinking and sitting" id = "image1">
+<p>And then he got up, and said: "And the only reason for making honey is so as I can eat it."<br> So he began to climb the tree.</p>
 <p>He climbed and he climbed and he climbed, and as he climbed he sang a little song to himself. It went like this:<br>
 Isn't it funny<br>
 How a bear likes honey?<br>
 Buzz! Buzz! Buzz!<br>
 I wonder why he does?</p>
-<img src = "images/pooh4.jpg" alt = "Winnie the Pooh climbing a tree">
-<p>Then he climbed a little further ... and a little further ... and then just a little further. By that time he had thought of another song.
-It's a very funny thought that, if Bears were Bees,
-They'd build their nests at the bottom of trees.
-And that being so (if the Bees were Bears),
+<p>Then he climbed a little further ... and a little further ... and then just a little further. By that time he had thought of another song.</p>
+<p>It's a very funny thought that, if Bears were Bees, They'd build their nests at the bottom of trees.</p>
+<p>And that being so (if the Bees were Bears),
 We shouldn't have to climb up all these stairs.</p>
-<p>He was getting rather tired by this time, so that is why he sang a Complaining Song. He was nearly there now, and if he just stood on that branch ...</p>
-
-<p>Crack!</p>
+<p>He was getting rather tired by this time, so that is why he sang a Complaining Song. </p>
+<p>He was nearly there now, and if he just stood on that branch ...</p>
+<img src = "images/pooh5.png" alt = "Winnie the Pooh falling from the tree" id = "image2">
 	
+<u><strong><p>Crack!</p></strong></u>
+
 <p>"Oh, help!" said Pooh, as he dropped ten feet on the branch below him.</p>
 <p>"If only I hadn't——" he said, as he bounced twenty feet on to the next branch.</p>
 <p>"You see, what I meant to do," he explained, as he turned head-over-heels, and crashed on to another branch thirty feet below, "what I meant to do——"</p>
 <p>"Of course, it was rather——" he admitted, as he slithered very quickly through the next six branches.</p>
 <p>"It all comes, I suppose," he decided, as he said good-bye to the last branch, spun round three times, and flew gracefully into a gorse-bush, "it all comes of liking honey so much. Oh, help!"</p>
-<img src = "images/pooh5.jpg" alt = "Winnie the Pooh falling from the tree">
-
+<br>
+<h4>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h4>
+</div>
+</section>
+	
+<div id = "container">
 <nav>
-<a href ="#">1</a>
-<a href ="#">2</a>
-<a href ="#">3</a>
-<a href ="#">4</a>
-<a href ="#">5</a>
+<a href ="Project2(Page2).html"><img src = "images/arrowreverse.png" alt = "Arrow to next page" id = "arrowreverse"></a>
+<a href ="Project2(Home).html" class = "color2">1</a>
+<a href ="Project2(Page2).html" class = "color2">2</a>
+<a href ="#" id = "color">3</a>
+<a href ="Project2(Page4).html" class = "color2">4</a>
+<a href ="Project4(Page5).html" class = "color2">5</a>
+<a href ="Project2(Page4).html"><img src = "images/arrow.png" alt = "Arrow to next page" id = "arrow"></a>
+<div id = "blockquote"><h5>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h5></div>
 </nav>
+</div>
+	
+	
 </body>
 </html>

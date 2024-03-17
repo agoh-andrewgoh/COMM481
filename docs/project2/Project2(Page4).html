@@ -3,13 +3,117 @@
 <head>
 <meta charset="utf-8">
 <title>Project 2: Winnie-the-Pooh Page: 4</title>
+<style>
+/* Default CSS settings*/
+	@font-face {
+	font-family: callienpooh;
+	src: url('fonts/callienpooh.ttf') format('truetype');
+	}
+	body{
+		background-color: #FFF7E7;
+		background-image: url("images/paperbackground.png");
+		background-size: cover;
+		background-repeat: repeat;
+		font-family: callienpooh;
+		z-index: 1;
+	}
+	h1 {
+		font-size: 5em;
+		color: #F3BC00;		
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+		text-align: center;
+	}
+	h2 {
+		margin-top: 0px;
+		font-size: 3em;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1.2em;
+		margin-top: -30px;
+		text-align: center;
+	}
+	.borders {
+		width: 100%;
+	}
+	#imgcontainer {
+	}
+	.poohimages {
+		width: 0%;
+	}
+	#poohbear {
+		width: 100%;
+	}
+	h4,h5 {
+		text-align: center;
+		font-size: 1.5em;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+	}
+	h5 {
+		display: none;
+	}
+	section { 
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 80%;
+		font-size: 1.5em;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+	}
+	p {
+		padding-left: 15px;
+	}
+	container {
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		font-size: 2em;
+		margin-top: 25px;
+		margin-bottom: -9px;
+		margin-left: 10px;
+	}
+	nav a {
+		margin: 0 auto;
+		text-decoration: none;
+		color: black;
+	}
+	#color {
+		color: #F3BC00;
+	}
+	#color:hover {
+		color:black;
+	}
+	.color2:hover {
+		color: #F3BC00;
+	}
+	#arrow,#arrowreverse {
+		width: 75px;
+		margin-top: -5px;
+	}
+	#arrow:hover,#arrowreverse:hover {
+		filter: invert(75%) sepia(100%) saturate(789%) hue-rotate(342deg) brightness(92%) contrast(101%);
+		}
+}
+</style>
+<link href="css/project2(page4).css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<img src = "images/pooh6.jpg" alt = "Winnie the Pooh getting out of a bush"> 
+<div id = "wrapper">
+<img src = "images/line-big_top.png" alt = "Border for header" class = "borders">
+<h1>Page Four</h1>
+<img src = "images/line-big_bottom.png" alt = "Border for header" class = "borders">
+</div>
+
+<section>
+<div>
 <p>He crawled out of the gorse-bush, brushed the prickles from his nose, and began to think again. And the first person he thought of was Christopher Robin.</p>
-<img src = "images/pooh7.jpg" alt = "Winnie the Pooh and Christopher Robin talking">
 <p>("Was that me?" said Christopher Robin in an awed voice, hardly daring to believe it.</p>
 <p>"That was you."</p>
+<img src = "images/pooh6.png" alt = "Winnie the Pooh getting out of a bush" id = "image1"> 
 <p>Christopher Robin said nothing, but his eyes got larger and larger, and his face got pinker and pinker.)</p>
 <p>So Winnie-the-Pooh went round to his friend Christopher Robin, who lived behind a green door in another part of the forest.</p>
 <p>"Good morning, Christopher Robin," he said.</p>
@@ -24,15 +128,15 @@
 <p>Well, it just happened that you had been to a party the day before at the house of your friend Piglet, and you had balloons at the party. You had had a big green balloon; and one of Rabbit's relations had had a big blue one, and had left it behind, being really too young to go to a party at all; and so you had brought the green one and the blue one home with you.</p>
 <p>"Which one would you like?" you asked Pooh.</p>
 <p>He put his head between his paws and thought very carefully.</p>
-<p>"It's like this," he said. "When you go after honey with a balloon, the great thing is not to let the bees know you're coming. Now, if you have a green balloon, they might think you were only part of the tree, and not notice you, and, if you have a blue balloon, they might think you were only part of the sky, and not notice you, and the question is: Which is most likely?"</p>
+<p>"It's like this," he said. "When you go after honey with a balloon, the great thing is not to let the bees know you're coming.</p> 
+<p>Now, if you have a green balloon, they might think you were only part of the tree, and not notice you, and, if you have a blue balloon, they might think you were only part of the sky, and not notice you, and the question is: Which is most likely?"</p>
 <p>"Wouldn't they notice you underneath the balloon?" you asked.</p>
 <p>"They might or they might not," said Winnie-the-Pooh. "You never can tell with bees." He thought for a moment and said: "I shall try to look like a small black cloud. That will deceive them."</p>
 <p>"Then you had better have the blue balloon," you said; and so it was decided.</p>
-<img src = "images/pooh8.jpg" alt = "Christopher Robin blowing into a balloon">
-<img src ="images/pooh10.jpg" alt = "Winnie the Pooh walking in the mud">
-<p>Well, you both went out with the blue balloon, and you took your gun with you, just in case, as you always did, and Winnie-the-Pooh went to a very muddy place that he knew of, and rolled and rolled until he was black all over; and then, when the balloon was blown up as big as big, and you and Pooh were both holding on to the string, you let go suddenly, and Pooh Bear floated gracefully up into the sky, and stayed there—level with the top of the tree and about twenty feet away from it.</p>
-<img src = "images/pooh11.jpg" alt = "Winnie the pooh floating in the sky">
-	
+<p>Well, you both went out with the blue balloon, and you took your gun with you, just in case, as you always did, and Winnie-the-Pooh went to a very muddy place that he knew of, and rolled and rolled until he was black all over;</p>
+<p>And then, when the balloon was blown up as big as big, and you and Pooh were both holding on to the string, you let go suddenly, and Pooh Bear floated gracefully up into the sky, and stayed there—level with the top of the tree and about twenty feet away from it.</p>
+<img src = "images/pooh11.png" alt = "Winnie the pooh floating in the sky" id = "image2">
+
 <p>"Hooray!" you shouted.</p>
 <p>"Isn't that fine?" shouted Winnie-the-Pooh down to you. "What do I look like?"</p>
 <p>"You look like a Bear holding on to a balloon," you said.</p>
@@ -60,8 +164,7 @@
 <p>"Yes, but wait a moment. We must be practical. The important bee to deceive is the Queen Bee. Can you see which is the Queen Bee from down there?"</p>
 <p>"No."</p>
 <p>"A pity. Well, now, if you walk up and down with your umbrella, saying, 'Tut-tut, it looks like rain,' I shall do what I can by singing a little Cloud Song, such as a cloud might sing.... Go!"</p>
-<img src ="images/pooh12.jpg" alt = "Christopher Robin holding an umbrella">
-<img src = "images/pooh11.jpg" alt = "Winnie the Pooh in the sky with bees">
+<img src ="images/pooh12.png" alt = "Christopher Robin holding an umbrella" id = "image3">
 <p>So, while you walked up and down and wondered if it would rain, Winnie-the-Pooh sang this song:<br>
 How sweet to be a Cloud<br>
 Floating in the Blue!<br>
@@ -71,12 +174,21 @@ Always sings aloud.<br>
 Floating in the Blue!"<br>
 It makes him very proud<br>
 To be a little cloud.</p>
+<h4>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h4>
+</div>
+</section>
+	
+<div id = "container">
 <nav>
-<a href ="#">1</a>
-<a href ="#">2</a>
-<a href ="#">3</a>
-<a href ="#">4</a>
-<a href ="#">5</a>
+<a href ="Project2(Page3).html"><img src = "images/arrowreverse.png" alt = "Arrow to next page" id = "arrowreverse"></a>
+<a href ="Project2(Home).html" class = "color2">1</a>
+<a href ="Project2(Page2).html" class = "color2">2</a>
+<a href ="Project2(Page3).html" class = "color2">3</a>
+<a href ="#.html" id = "color">4</a>
+<a href ="Project4(Page5).html" class = "color2">5</a>
+<a href ="Project2(Page5).html"><img src = "images/arrow.png" alt = "Arrow to next page" id = "arrow"></a>
+<div id = "blockquote"><h5>In which we are introduced to Winnie-the-Pooh and some bees, and the stories begin</h5></div>
 </nav>
+</div>
 </body>
 </html>

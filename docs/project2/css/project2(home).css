@@ -1,5 +1,5 @@
 /* Mobile CSS settings*/
-@media only screen and (min-width: 320px) and (max-width: 767px){
+@media only screen and (max-width: 767px){
 	h1 {
 		font-size: 6em;
 		color: #FFD14B;
@@ -96,8 +96,7 @@
     }
 
     #poohbear {
-		max-width: 100%;
-        width: auto;
+        width: 40%;
         display: block;
         margin: 0 auto;
     }
@@ -126,6 +125,7 @@
 	#blockquote {
 		background-color: white;
 		border-radius: 50px;
+		width: 80%;
 		display: flex;
 	    margin-left: -0.5vw;
 }

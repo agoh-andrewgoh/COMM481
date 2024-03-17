@@ -1,0 +1,32 @@
+@charset "utf-8";
+@media only screen and (min-width: 768px) and (max-width: 1204px){
+	h1 {
+		font-size: 8em;
+		text-align: left;
+	}
+	.borders {
+		width: 75%;
+	}
+	section {
+		display: flex;
+		flex-direction: unset;
+		margin-left: 0;
+		width: 100%;
+	}
+	h4 {
+		font-size: 1.5em;
+		margin-left: 12px;
+	}
+	p {
+		padding-right: 5px;
+	}
+	.image {
+		width: 60%;
+		margin-right: 0px;
+		margin-top: -170px;
+        float: right;
+		shape-outside: url("../images/pooh1.png")
+	}
+}
+@media only screen and (min-width: 1205px){
+}
