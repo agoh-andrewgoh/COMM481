@@ -92,6 +92,7 @@ h1 {
 /* Dropdown menu content */
 nav {
 	height: 25px;
+	font-family: 'Roboto Regular';
 }
 a {
 	color: white;
