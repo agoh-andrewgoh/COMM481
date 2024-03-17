@@ -23,7 +23,6 @@
 	.image {
 		width: 60%;
 		margin-right: 0px;
-		margin-top: -170px;
         float: right;
 		shape-outside: url("../images/pooh1.png")
 	}

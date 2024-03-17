@@ -23,14 +23,12 @@
 	}
 	#image1 {
 		width: 60%;
-		margin-top: -120px;
         float: right;
 		shape-outside: url("../images/pooh2.png");
 	}
 	#image2 {
 		width: 50%;
         float: left;
-		shape-outside: url("../images/pooh5.png");	
 	}
 }
 @media only screen and (min-width: 1205px){

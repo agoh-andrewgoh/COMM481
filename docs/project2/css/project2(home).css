@@ -63,7 +63,10 @@
 	#color {
 		color: #F3BC00;
 	}
-
+	#imgcontainer {
+		justify-content: flex-start;
+		margin: 0;
+	}
 }
 @media only screen and (min-width: 1205px) {
     #wrapper {

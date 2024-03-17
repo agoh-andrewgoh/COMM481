@@ -29,13 +29,11 @@
 	}
 	#image2 {
 		width: 50%;
-		margin-top: 0px;
         float: left;
 		shape-outside: url("../images/pooh11.png");	
 	}
 	#image3{
 		width: 50%;
-		margin-top: 0px;
         float: left;
 		shape-outside: url("../images/pooh12.png");	
 	}
