@@ -23,14 +23,11 @@
 	}
 	#image1 {
 		width: 60%;
-		margin-top: -80px;
         float: right;
-		shape-outside: url("../images/pooh6.png");
 	}
 	#image2 {
 		width: 50%;
         float: left;
-		shape-outside: url("../images/pooh11.png");	
 	}
 	#image3{
 		width: 50%;
