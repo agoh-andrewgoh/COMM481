@@ -117,6 +117,9 @@
     #arrow {
         width: 5vw;
     }
+	#arrowreverse {
+		width: 5vw;
+	}
 	#color{
 		color: white;
 	}

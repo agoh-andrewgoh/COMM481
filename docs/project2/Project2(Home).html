@@ -72,6 +72,7 @@ nav {
 	flex-direction: row;
 	justify-content: center;
 	font-size: 2em;
+	margin-top: 25px;
 }
 nav a {
 	margin: 0 auto;
@@ -87,12 +88,15 @@ nav a {
 .color2:hover {
 	color: #F3BC00;
 }
-#arrow {
+#arrow,#arrowreverse {
 	width: 75px;
 }
-#arrow:hover {
-    filter: invert(75%) sepia(100%) saturate(789%) hue-rotate(342deg) brightness(92%) contrast(101%);
-	}
+#arrow:hover{
+	filter: invert(75%) sepia(100%) saturate(789%) hue-rotate(342deg) brightness(92%) contrast(101%);
+}
+#arrowreverse {
+	opacity: 0;
+}
 </style>
 <link href = "css/project2(home).css" rel="stylesheet" type="text/css">
 </head>
@@ -116,6 +120,7 @@ nav a {
 
 <div id = "container">
 <nav>
+<a><img src = "images/arrowreverse.png" alt = "Arrow to next page" id = "arrowreverse"></a>
 <a href ="#" id = "color">1</a>
 <a href ="Project2(Page2).html" class = "color2">2</a>
 <a href ="Project2(Page3).html" class = "color2">3</a>
