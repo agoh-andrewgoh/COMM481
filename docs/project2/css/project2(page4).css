@@ -70,7 +70,8 @@
 	section {
 		display: flex;
 		flex-direction: unset;
-		width: 70%;
+		float: right;
+		width: 85%;
 	}
     #container {
         width: 15%;
