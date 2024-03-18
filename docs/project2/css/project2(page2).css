@@ -16,6 +16,7 @@
 	h4 {
 		font-size: 1.5em;
 		margin-left: 12px;
+		max-width: 60%;
 	}
 	p {
 		padding-right: 5px;
@@ -28,4 +29,80 @@
 	}
 }
 @media only screen and (min-width: 1205px){
+    #wrapper {
+        width: 85%;
+        padding-left: 15vw;
+    }
+    h1 {
+        font-size: 7vw;
+		text-align: left;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 2vw;
+    }
+	h4 {
+		font-size: 2vw;
+		text-align: center;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		margin-left: 13px;
+	}
+    .borders {
+        width: 35%;
+    }
+	section {
+		display: flex;
+		flex-direction: unset;
+		width: 70%;
+	}
+    #container {
+        width: 15%;
+        height: 100vh;
+        background-color:#F3BC00;		
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    nav {
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    nav a {
+		margin-bottom: 2vh;
+        text-align: center;
+    }
+    #arrow {
+        width: 5vw;
+    }
+	#arrowreverse {
+		width: 5vw;
+	}
+	#color {
+		color: white;
+	}
+	#color:hover {
+		color: black;
+	}
+	.color2:hover {
+		color: white;
+	}
+	#arrow:hover {
+		filter: invert(100%) brightness(100%);
+		}
+	#arrowreverse:hover {
+		filter: invert(100%) brightness(100%);
+	}
+	.image {
+		width: 45%;
+        float: right;
+		shape-outside: url("../images/pooh1.png")
+	}
 }
