@@ -3,6 +3,7 @@
 	h1 {
 		font-size: 8em;
 		text-align: left;
+		margin-left: 30px;
 	}
 	h2 {
 		font-size: 5em;
@@ -59,6 +60,7 @@
 
     h1 {
         font-size: 7vw;
+		margin-left: 30px;
     }
 
     h2 {

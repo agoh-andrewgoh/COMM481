@@ -3,6 +3,7 @@
 	h1 {
 		font-size: 8em;
 		text-align: left;
+		margin-left: 20px;
 	}
 	.borders {
 		width: 75%;
@@ -36,6 +37,7 @@
     h1 {
         font-size: 7vw;
 		text-align: left;
+		margin-left: 20px;
     }
 
     h2 {
