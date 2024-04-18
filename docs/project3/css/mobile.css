@@ -99,7 +99,7 @@ h1 {
 	color: #297BC0;
 }
 #color2 {
-	color: #2FB24E
+	color: #2FB24E;
 }
 #color3 {
 	color: black;
@@ -109,26 +109,23 @@ h1 {
 }
 .swiper-container {
     position: relative;
-    width: 100%; /* Set the width to 50% of the viewport width */
-    height: auto; /* Allow the height to adjust based on the aspect ratio */
-    overflow: hidden; /* Hide any overflowing content */
+    width: 100%;
+    overflow: hidden;
 }
 .swiper-wrapper {
-    display: flex; /* Use flexbox to align the slides horizontally */
+    display: flex;
 }
 .swiper-slide {
-    width: 100%; /* Set the width of each slide to 100% */
-    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    width: 100%;
 }
 .swiper-slide img {
-    max-width: 100%; /* Set the maximum width of the image to 100% of its container */
-    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    width: 100%;
 }
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: -1;
 }
 .swiper-pagination {
     position: absolute;
@@ -139,4 +136,40 @@ h1 {
 }
 .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #333;
+}
+#calendar-container {
+	text-align: center;
+	margin-top: 10px;
+}
+h4 {
+	font-size: 2em;
+}
+#calendar-wrapper {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#calendar-box1,
+#calendar-box2,
+#calendar-box3,
+#calendar-box4 {
+    color: #000000;
+    font-size: 2em;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+#calendar-box1 {
+    border: 10px solid #297BC0;
+}
+#calendar-box2 {
+    border: 10px solid #2FB24E;
+}
+#calendar-box3 {
+    border: 10px solid black;
+}
+#calendar-box4 {
+    border: 10px solid #EF4826;
 }
