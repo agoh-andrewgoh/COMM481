@@ -1,3 +1,6 @@
+body {
+	overflow-x: hidden;
+}
 #specialexhibit {
 	height: 100vh;
 	background-image: url("../images/specialexhibit.jpg");
@@ -103,15 +106,22 @@ h1 {
 #color4 {
 	color: #EF4826;
 }
-#carousel {
-    width: 100%;
-    overflow: hidden;
+.swiper-container {
+    position: relative;
 }
-
-.carousel-item {
-    display: none;
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
-
-.carousel-item.active {
-    display: block;
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #333;
 }
