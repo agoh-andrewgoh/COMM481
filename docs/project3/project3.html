@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+<title>MOCA</title>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navmenu = document.querySelector('.navmenu');
+    const navigation = document.querySelector('.navigation');
+    const closeBtn = document.querySelector('.closebutton');
+    
+    let isNavigationOpen = false;
+
+    navmenu.addEventListener('click', function() {
+        toggleNavigation();
+    });
+
+    closeBtn.addEventListener('click', function() {
+        toggleNavigation();
+    });
+
+    function toggleNavigation() {
+        if (!isNavigationOpen) {
+            navigation.style.right = '0px';
+            isNavigationOpen = true;
+        } else {
+            navigation.style.right = '-300px';
+            isNavigationOpen = false;
+        }
+    }
+});
+var swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If you want pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // Enable swipe on touch devices
+  touch: true,
+});
+</script>
+	
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<link href="css/mobile.css" rel="stylesheet" type="text/css">
+<link href="css/ipad.css" rel="stylesheet" type="text/css">
+<link href="css/desktop.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<nav>
+	<div id = "navbox">
+		<div id = "navlogobox">
+		<img src = "images/mocalogo.png" alt = "Museum of Contemporary Arts Logo">
+		<h1>Museum of Contemporary Arts</h1>
+		</div>
+		<div class="navmenu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+			<div class="navigation" id="navigation">
+			<div class="closebutton">X</div>
+			<ul>
+				<li><a href="#" id = "color1">MOCA Grand</a></li>
+				<li><a href="#" id = "color2">MOCA Geffen</a></li>
+				<li><a href="#" id = "color3">WAREHOUSE</a></li>
+				<li><a href="#" id = "color4">Double Negative</a></li>
+				<li><a href="#">Exhibitions</a></li>
+				<li><a href="#">Collections</a></li>
+				<li><a href="#">Programs</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Visit</a></li>
+				<li><a href="#">Get Tickets</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	
+<div id = "specialexhibit">
+	<h2>Special Exhibition</h2>
+	<div id = "h2subtext">Paul Pfeiffer</div>
+	<div id = "h2subtext2">Prologue to the Story of the Birth of Freedom</div>
+</div>
+	
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/mocalogo.png" alt="Image 1"></div>
+    <div class="swiper-slide"><img src="images/mocalogo.png" alt="Image 2"></div>
+    <div class="swiper-slide"><img src="images/mocalogo.png" alt="Image 3"></div>
+    <!-- Add more slides as needed -->
+  </div>
+  <!-- Add pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+
+
+</body>
+</html>
