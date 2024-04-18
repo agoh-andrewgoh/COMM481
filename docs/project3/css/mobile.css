@@ -109,7 +109,7 @@ h1 {
 }
 .swiper-container {
     position: relative;
-    width: 50%; /* Set the width to 50% of the viewport width */
+    width: 100%; /* Set the width to 50% of the viewport width */
     height: auto; /* Allow the height to adjust based on the aspect ratio */
     overflow: hidden; /* Hide any overflowing content */
 }
