@@ -35,10 +35,11 @@ h2 {
 }
 #navbox {
 	width: 100vw;
-	min-height: 80px;
+	height: 80px;
 	background-color:#ffffff;		
 	position: fixed;
 	padding-top: 10px;
+	margin-top: -16px;
 }
 #navlogobox {
 	margin-left : 10px;
@@ -120,7 +121,7 @@ h1 {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
+    z-index: -1;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #333;
