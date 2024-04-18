@@ -33,52 +33,33 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel-item');
-    let startX;
-
-    function showSlide(n) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (n + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-
-    // Show next slide
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
-
-    // Show previous slide
-    function prevSlide() {
-        showSlide(currentSlide - 1);
-    }
-
-    // Swipe detection
-    document.getElementById('carousel').addEventListener('touchstart', function(e) {
-        startX = e.touches[0].clientX;
+    const swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        grabCursor: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+            enabled: true,
+        },
     });
-
-    document.getElementById('carousel').addEventListener('touchend', function(e) {
-        const endX = e.changedTouches[0].clientX;
-        const diffX = startX - endX;
-
-        if (diffX > 50) { // Swipe left
-            nextSlide();
-        } else if (diffX < -50) { // Swipe right
-            prevSlide();
-        }
-    });
-
-    // Automatic slide change (optional)
-    setInterval(nextSlide, 5000); // Change slide every 5 seconds
 });
 </script>
-	
 
 <link href="css/mobile.css" rel="stylesheet" type="text/css">
 <link href="css/ipad.css" rel="stylesheet" type="text/css">
 <link href="css/desktop.css" rel="stylesheet" type="text/css">
 <link href="css/reset.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><br>
+	
 </head>
 <body>
 
@@ -118,17 +99,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	<div id = "h2subtext2">Prologue to the Story of the Birth of Freedom</div>
 </div>
 
-<div id="carousel">
-    <div class="carousel-item active">
-        <img src="../project2/images/pooh12.png" alt="Image 1">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../project2/images/pooh12.png" alt="Image 1"></div>
+        <div class="swiper-slide"><img src="../project2/images/pooh13.png" alt="Image 2"></div>
+        <div class="swiper-slide"><img src="../project2/images/pooh15.png" alt="Image 3"></div>
     </div>
-    <div class="carousel-item">
-        <img src="../project2/images/pooh12.png" alt="Image 2">
-    </div>
-    <div class="carousel-item">
-        <img src="../project2/images/pooh12.png" alt="Image 3">
-    </div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
 </div>
+
 
 </body>
 </html>
