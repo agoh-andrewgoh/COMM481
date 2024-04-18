@@ -109,6 +109,20 @@ h1 {
 }
 .swiper-container {
     position: relative;
+    width: 50%; /* Set the width to 50% of the viewport width */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    overflow: hidden; /* Hide any overflowing content */
+}
+.swiper-wrapper {
+    display: flex; /* Use flexbox to align the slides horizontally */
+}
+.swiper-slide {
+    width: 100%; /* Set the width of each slide to 100% */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+}
+.swiper-slide img {
+    max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
 }
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
