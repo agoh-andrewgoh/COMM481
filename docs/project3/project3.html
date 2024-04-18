@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-item');
-    
+    let startX;
+
     function showSlide(n) {
         slides[currentSlide].classList.remove('active');
         currentSlide = (n + slides.length) % slides.length;
@@ -52,13 +53,24 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide - 1);
     }
 
+    // Swipe detection
+    document.getElementById('carousel').addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+    });
+
+    document.getElementById('carousel').addEventListener('touchend', function(e) {
+        const endX = e.changedTouches[0].clientX;
+        const diffX = startX - endX;
+
+        if (diffX > 50) { // Swipe left
+            nextSlide();
+        } else if (diffX < -50) { // Swipe right
+            prevSlide();
+        }
+    });
+
     // Automatic slide change (optional)
     setInterval(nextSlide, 5000); // Change slide every 5 seconds
-
-    // Event listeners for next and previous buttons (optional)
-    // Assuming you have buttons with IDs 'prevBtn' and 'nextBtn'
-    document.getElementById('prevBtn').addEventListener('click', prevSlide);
-    document.getElementById('nextBtn').addEventListener('click', nextSlide);
 });
 </script>
 	
