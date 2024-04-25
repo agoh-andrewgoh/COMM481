@@ -213,7 +213,7 @@ h4 {
 	margin: 0 auto;
 }
 h5 {
-	font-size: 3em;
+	font-size: 3vw;
 }
 p {
 	font-size: 1em;
@@ -224,10 +224,14 @@ p {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+#littleugly-text {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1vw;
+}
 #socialmedia-nav {
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;
-}
 }
 }

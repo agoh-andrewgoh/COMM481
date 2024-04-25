@@ -133,8 +133,9 @@ h3 {
 }
 .swiper-container {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
+	margin: 0 auto;
 }
 .swiper-wrapper {
     display: flex;
@@ -216,7 +217,7 @@ p {
 	font-size: 1em;
 }
 #littleugly-image {
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
