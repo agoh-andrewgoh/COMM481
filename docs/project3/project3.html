@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </head>
 <body>
 
+<!-- This is for MOBILE NAV ONLY -->
 <nav>
 	<div id = "navbox">
 		<div id = "navlogobox">
@@ -77,21 +78,47 @@ document.addEventListener('DOMContentLoaded', function() {
 			<div class="navigation" id="navigation">
 			<div class="closebutton">X</div>
 			<ul>
-				<li><a href="#" id = "color1">MOCA Grand</a></li>
-				<li><a href="#" id = "color2">MOCA Geffen</a></li>
-				<li><a href="#" id = "color3">WAREHOUSE</a></li>
-				<li><a href="#" id = "color4">Double Negative</a></li>
-				<li><a href="#">Exhibitions</a></li>
-				<li><a href="#">Collections</a></li>
-				<li><a href="#">Programs</a></li>
-				<li><a href="#">Support</a></li>
-				<li><a href="#">Shop</a></li>
-				<li><a href="#">Visit</a></li>
-				<li><a href="#">Get Tickets</a></li>
+				<li><a href="#" class = "color1">MOCA Grand</a></li>
+				<li><a href="#" class = "color2">MOCA Geffen</a></li>
+				<li><a href="#" class = "color3">WAREHOUSE</a></li>
+				<li><a href="#" class = "color4">Double Negative</a></li>
+				<li><a href="#" class = "color5">Exhibitions</a></li>
+				<li><a href="#" class = "color5">Collections</a></li>
+				<li><a href="#" class = "color5">Programs</a></li>
+				<li><a href="#" class = "color5">Support</a></li>
+				<li><a href="#" class = "color5">Shop</a></li>
+				<li><a href="#" class = "color5">Visit</a></li>
+				<li><a href="#" class = "color5">Get Tickets</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
+	
+<!-- This is for IPAD/DESKTOP NAV ONLY -->
+<nav>
+	<div id = "navbox2">
+		<div id = "navlogobox2">
+		<img src = "images/mocalogo.png" alt = "Museum of Contemporary Arts Logo">
+		<h1>Museum of Contemporary Arts</h1>
+		</div>
+    <ul id ="navigation2">
+        <li><a href="#exhibitions">Exhibitions</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#shop">Shop</a></li>
+	    <li><a href="#visit">Visit</a></li>
+        <li><a href="#tickets">Get Tickets</a></li>
+    </ul>
+	    <ul id ="navigation2-secondbar">
+        <li><a href="#grand" class = "color1">MOCA Grand</a></li>
+        <li><a href="#geffen" class = "color2">MOCA Geffen</a></li>
+        <li><a href="#warehouse" class = "color3">WAREHOUSE</a></li>
+        <li><a href="#doublenegative" class = "color4">Double Negative</a></li>
+    	</ul>
+	</div>
+</nav>
+
 	
 <div id = "specialexhibit">
 	<h2>Special Exhibition</h2>
@@ -99,24 +126,69 @@ document.addEventListener('DOMContentLoaded', function() {
 	<div id = "h2subtext2">Prologue to the Story of the Birth of Freedom</div>
 </div>
 
+<div class = "header-container">
+<div class = "headerbar-blue"></div>
 <h3>Exhibits</h3>
+<div class = "headerbar-blue"></div>
+</div>
+
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../project2/images/pooh12.png" alt="Image 1"></div>
-        <div class="swiper-slide"><img src="../project2/images/pooh13.png" alt="Image 2"></div>
-        <div class="swiper-slide"><img src="../project2/images/pooh15.png" alt="Image 3"></div>
+        <div class="swiper-slide"><img src="images/eddie-rodolfo-aparicio.png" alt="Eddie Rodolfo's Aparicio Exhibition Image"></div>
+        <div class="swiper-slide"><img src="images/reverberations.jpg" alt="Reverberations Exhibition Image"></div>
+        <div class="swiper-slide"><img src="images/longstory.jpg" alt="Long Story Exhibition Image"></div>
+	    <div class="swiper-slide"><img src="images/nancy_rubins.jpg" alt="Nancy Rubins Exhibition Image"></div>
     </div>
 <div class="swiper-pagination"></div>
 </div>
 
 <div id = "calendar-container">
-<h4>Calendar</h4>
+<div class = "header-container">
+	<div class = "headerbar-green"></div>
+	<h4>Events</h4>
+	<div class = "headerbar-green"></div>
+</div>
 	<div id = "calendar-wrapper">
-		<div id ="calendar-box1">Hello World</div>
-		<div id ="calendar-box2">Hello World</div>
-		<div id ="calendar-box3">Hello World</div>
-		<div id ="calendar-box4">Hello World</div>
+		<div id ="calendar-box1"><div class = "calendarday-font"><u>Tuesday March 26th</u></div>
+			<p>Artist on Artist</p>
+			<p>Kenturah Davis on MOCA Focus:</p>
+			<p>Eddie Rodolfo Aparcio</p>
+		</div>
+		<div id ="calendar-box2"><div class = "calendarday-font"><u>Saturday March 30</u></div>
+			<p>Curator-led Walkthrough of Paul Pfeiffer:</p>
+			<p>Prologue to the Story of the Birth of Freedom</p>
+		</div>
+		<div id ="calendar-box3"><div class = "calendarday-font"><u>Thursday May 30</u></div>
+			<p>Mercado Moca</p>
+		</div>
+		<div id ="calendar-box4"><div class = "calendarday-font"><u>Tuesday June 4</u></div>
+			<p>MOCA Artist Film Series:</p>
+			<p>Zineb Sedira</p>
+			<p><i>Dreams Have No Titles</i></p>
+		</div>
 	</div>
+</div>
+
+<div id = "littlugly-container">
+<div class = "header-container">
+	<div class = "headerbar-orange"></div>
+	<h5>MOCA Store Presents</h5>
+	<div class = "headerbar-orange"></div>
+</div>
+	<img src = "images/little-ugly.png" alt = "Little Ugly Store Ad" id = "littleugly-image">
+	<div id = "littleugly-text">
+		<p>A performative Lecture and Plushie Edition with Ann Hirsch and Maya Man</p>
+		<p>Thursday March 28 6PM-8PM</p>
+		<p>Moca Grand Avenue</p>
+	</div>
+</div>
+
+<div id = "socialmedia-nav">
+	<a href="#"><img src="images/icons8-instagram-50.png" alt="Instagram Link"></a>
+	<a href="#"><img src="images/icons8-facebook-50.png" alt="Facebook Link"></a>
+	<a href="#"><img src="images/icons8-twitter-50.png" alt="Twitter Link"></a>
+	<a href="#"><img src="images/icons8-youtube-50.png" alt="YouTube Link"></a>
+	<a href="#"><img src="images/icons8-tumblr-50.png" alt="Tumblr Link"></a>
 </div>
 
 </body>

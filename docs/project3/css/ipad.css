@@ -1,2 +1,229 @@
 @media only screen and (min-width: 768px) and (max-width: 1204px){
+body {
+	overflow-x: hidden;
+}
+#specialexhibit {
+	height: 100vh;
+	background-image: url("../images/specialexhibit.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: -1;
+    white-space: nowrap;
+}
+h2, #h2subtext, #h2subtext2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 1;
+}
+#navbox {
+	display: none;
+}
+#navbox2 {
+	display: block;
+	width: 100vw;
+	height: 150px;
+	background-color:#ffffff;		
+	position: fixed;
+	padding-top: 10px;
+	margin-top: -16px;
+	z-index: 1000;
+}
+#navlogobox2 {
+	margin: 0 auto;
+}
+#navbox2 img {
+    width: auto;
+    height: 75px;
+    display: block;
+    margin: 0 auto;   
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+#navigation2 {
+    text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+#navigation2 li {
+    margin: 0 15px;
+}
+#navigation2 li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.3em;
+	z-index: 1001;
+}
+#navigation2 li a:hover {
+    color: #297BC0;
+}
+#navigation2-secondbar {
+    text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 7.5px;
+	background-color: #C9C9C9;
+    width: 650px;
+	height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#navigation2-secondbar li {
+    margin: 5px 15px;
+}
+#navigation2-secondbar li a {
+    text-decoration: none;
+    font-size: 1.3em;
+	z-index: 1001;
+}
+#navigation2-secondbar li a:hover {
+    color: white;
+}
+h2 {
+    top: 75%;
+    font-size: 3em;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#h2subtext {
+    top: 86%;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#h2subtext2 {
+    top: 95%;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.header-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+.headerbar-blue {
+	width: 20%;
+	height: 5px;
+	background-color: #297BC0;
+	border-radius: 10px;
+	margin: 22px;
+}
+.headerbar-green {
+	width: 20%;
+	height: 5px;
+	background-color: #2FB24E;
+	border-radius: 10px;
+	margin: 22px;
+}
+.headerbar-orange {
+	width: 20%;
+	height: 5px;
+	background-color: #EF4826;
+	border-radius: 10px;
+	margin: 22px;
+}
+h3 {
+	font-size: 3em;
+	text-align: center;
+}
+.swiper-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-wrapper {
+    display: flex;
+}
+.swiper-slide {
+    width: 100%;
+	height: 100%;
+}
+.swiper-slide img {
+    width: 100%;
+	height: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #EF4826;
+}
+#calendar-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+h4 {
+	font-size: 3em;
+}
+#calendar-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+#calendar-box1,
+#calendar-box2,
+#calendar-box3,
+#calendar-box4 {
+    color: white;
+    font-size: 2em;
+	height: 300px;
+}
+#calendar-box1 {
+    background-color: #297BC0;
+}
+#calendar-box2 {
+    background-color: #2FB24E;
+}
+#calendar-box3 {
+    background-color: black;
+}
+#calendar-box4 {
+    background-color: #EF4826;
+}
+.calendarday-font {
+	font-size: 0.6em;
+}
+#littlugly-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+h5 {
+	font-size: 3em;
+}
+p {
+	font-size: 1em;
+}
+#littleugly-image {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#socialmedia-nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
 }

@@ -33,6 +33,9 @@ h2 {
     font-size: 1.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+#navbox2 {
+	display: none;
+}
 #navbox {
 	width: 100vw;
 	height: 80px;
@@ -40,6 +43,7 @@ h2 {
 	position: fixed;
 	padding-top: 10px;
 	margin-top: -16px;
+	z-index: 1000;
 }
 #navlogobox {
 	margin-left : 10px;
@@ -63,6 +67,7 @@ h1 {
     height: 3px;
     background-color: #000;
     margin-bottom: 4px;
+	margin-right: 15px;
 }
 .navigation {
     position: fixed;
@@ -95,17 +100,52 @@ h1 {
     font-size: 3em;
     z-index: 1001;
 }
-#color1 {
+.color1 {
 	color: #297BC0;
 }
-#color2 {
+.color2 {
 	color: #2FB24E;
 }
-#color3 {
+.color3 {
 	color: black;
 }
-#color4 {
+.color4 {
 	color: #EF4826;
+}
+.color1:hover, .color2:hover, .color3:hover, .color4:hover{
+	color: white;
+}
+.color5:hover {
+	color: black;
+}
+.header-container {
+	display: flex;
+	justify-content: center;
+}
+.headerbar-blue {
+	width: 20%;
+	height: 5px;
+	background-color: #297BC0;
+	border-radius: 10px;
+	margin: 22px;
+}
+.headerbar-green {
+	width: 20%;
+	height: 5px;
+	background-color: #2FB24E;
+	border-radius: 10px;
+	margin: 22px;
+}
+.headerbar-orange {
+	width: 20%;
+	height: 5px;
+	background-color: #EF4826;
+	border-radius: 10px;
+	margin: 22px;
+}
+h3 {
+	font-size: 3em;
+	text-align: center;
 }
 .swiper-container {
     position: relative;
@@ -117,9 +157,11 @@ h1 {
 }
 .swiper-slide {
     width: 100%;
+	height: 100%;
 }
 .swiper-slide img {
     width: 100%;
+	height: 100%;
 }
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
@@ -135,14 +177,14 @@ h1 {
     z-index: -1;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #333;
+    background-color: #EF4826;
 }
 #calendar-container {
 	text-align: center;
 	margin-top: 10px;
 }
 h4 {
-	font-size: 2em;
+	font-size: 3em;
 }
 #calendar-wrapper {
 	margin-top: 10px;
@@ -154,22 +196,52 @@ h4 {
 #calendar-box2,
 #calendar-box3,
 #calendar-box4 {
-    color: #000000;
+    color: white;
     font-size: 2em;
-    background-color: white;
     padding: 20px;
     width: 80%;
     margin-bottom: 10px;
 }
 #calendar-box1 {
-    border: 10px solid #297BC0;
+    background-color: #297BC0;
 }
 #calendar-box2 {
-    border: 10px solid #2FB24E;
+    background-color: #2FB24E;
 }
 #calendar-box3 {
-    border: 10px solid black;
+    background-color: black;
 }
 #calendar-box4 {
-    border: 10px solid #EF4826;
+    background-color: #EF4826;
+}
+.calendarday-font {
+	font-size: 0.6em;
+	padding-bottom: 12px;
+}
+#littlugly-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+h5 {
+	font-size: 3em;
+}
+#littleugly-image {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#littleugly-text {
+	background-color: #297BC0;
+	color: white;
+	border-radius: 10px;
+	font-size: 1.2em;
+}
+#socialmedia-nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
 }
