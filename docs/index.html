@@ -5,96 +5,74 @@
 <title>Project 1</title>
 <style>
 @font-face {
-    font-family: Midnight;
-    src: url('fonts/Midnight.ttf') format('truetype');
-}
-@font-face {
 font-family: 'Roboto Regular';
 src: url('fonts/Roboto-Regular.ttf') format('truetype');
 }
 </style>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    var dropdowns = document.querySelectorAll('.dropdown');
-
-    dropdowns.forEach(function(dropdown) {
-        var dropdownContent = dropdown.querySelector('.dropdown-content');
-
-        dropdown.addEventListener('mouseover', function() {
-            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
-        });
-
-        dropdown.addEventListener('mouseleave', function() {
-            dropdownContent.style.maxHeight = '0';
-        });
-    });
-});
+function showAboutMe() {
+    document.getElementById("home-container").style.display = "none";    
+    document.getElementById("aboutme-container").style.display = "flex";
+}
+function showHome() {
+    document.getElementById("home-container").style.display = "flex";    
+    document.getElementById("aboutme-container").style.display = "none";
+}
+function changeBackground(image) {
+    document.body.style.backgroundImage = "url('" + image + "')";
+}
 </script>
-<link href= "css/project1.css" rel="stylesheet" type="text/css">
+<link href= "css/desktop.css" rel="stylesheet" type="text/css">
+<link href= "css/ipad.css" rel="stylesheet" type="text/css">
+<link href= "css/mobile.css" rel="stylesheet" type="text/css">
 <link href= "css/reset.css" rel="stylesheet" type="text/css">
 </head>
+<body>	
 
-<body>
+<!-- This is for Home -->
 
-<h1>ANDREW</h1>
-	
-<div id="container">
-	<div id = "sprites">
-    	<div id="riseagainst"></div>
-        <div id="riseagainstalbum"></div>
-        <div id="suisei"></div>
-        <div id="midnight"></div>
-    </div>
-<nav>
-   <div class = "navigation">
-        <div class="dropdown">
-            <a href = "#" class="dropbutton">Inspirational</a>
-            <div class="dropdown-content">
-                <a href="https://godly.website/" target="_blank">Godly Website</a>
-                <a href="https://dribbble.com/" target="_blank">Dribble</a>
-                <a href="https://m2.material.io/" target="_blank">M2 Material</a>
-			    <a href="https://www.siteinspire.com/" target="_blank">Site Inspire</a>
-                <a href="https://land-book.com/" target="_blank">Land Book</a>
+<div id = "home-container" style="display: none;">
+	<div id = "header-container">
+		<h1>Andrew</h1>
+		<h2>Goh</h2>
+		<h3>Bananas and Apples</h3>
+	</div>
 
-            </div>
-        </div>
-        <div class="dropdown">
-            <a href = "#" class="dropbutton">Design Resources</a>
-            <div class="dropdown-content">
-                <a href="https://design.google/" target="_blank">Google Design</a>
-                <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
-                <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
-			    <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
-                <a href="https://github.com/" target="_blank">GitHub</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <a href = "#" class="dropbutton">Other Resources</a>
-            <div class="dropdown-content">
-                <a href="https://chat.openai.com/" target="_blank">Chat GPT</a>
-			    <a href="https://unsplash.com" target="_blank">Unsplash</a>
-                <a href="https://artsexperiments.withgoogle.com/artpalette/" target="_blank">Google Art Palette</a>
-                <a href="https://www.color-hex.com/" target="_blank">Color Hex</a>
-			    <a href="https://codepen.io/" target="_blank">Code Pen</a>
-                <a href="https://www.linkedin.com/learning/" target="_blank">Linkedin Learning</a>
-                <a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <a href = "#" class="dropbutton">My Work</a>
-            <div class="dropdown-content">
-                <a href="https://agoh-andrewgoh.github.io/COMM380/index.html" target="_blank">COMM380</a>
-				<a href="inclass/week5/week5.html" onclick="window.open(this.href, 'popupWindow', 'width=1200,height=1200'); return false;">Oh Nuts!</a>
-                <a href="inclass/week6/week6.html" target="_blank">Shelly</a>
-				<a href="project2/Project2(Home).html" target="_blank">Project 2</a>
-				<a href="inclass/week11/week11-more-transitions/week11.html" target="_blank">Sandwich</a>
-				<a href="project3/project3.html" target="_blank">Project 3</a>
-            </div>
-        </div>
-    </div>
-</nav>
-    
+	<div id ="nav-container">
+		<div id = "navigation">
+	<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>			
+			<a href="#" onclick="changeBackground('terra2.jpg')">Portfolio</a>
+			<a href="#" onclick="changeBackground('terranew.jpg')">Contact</a>
+		</div>
+	</div>
 </div>
 
+<!-- This is for About Me -->
+<div id = "aboutme-container" style="display: none;">
+	<div id = "aboutme-wrapper">	
+		<h4>About Me</h4>
+			<div id = "navigation-aboutme">
+		<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">About Me</a>			
+				<a href="#" >Portfolio</a>
+				<a href="#" >Contact</a>
+			</div>
+	</div>
+	<div id = "aboutme-textcontainer">
+		<div id = "aboutme-text">
+				<p>It starts with success</p>
+			</div>
+	</div>
+</div>
+	
+<!-- This is for Portfolio-->	
+	
+<div id = "portfolio-container">
+	<div id = "portfolio-wrapper">
+		<h5>Portfolio</h5>
+		<div id = "navigation-portfolio">
+		</div>
+	</div>
+</div>
+	
 </body>
 </html>

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@media only screen and (min-width: 1205px){
+
+html, body {
+	height: 100vh;
+}
+body {
+	font-family: 'Roboto';
+	background-image: url("../images/terranew.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #121C6A;
+    display: flex;
+}
+#home-container {
+	margin-bottom: auto;
+	margin-top: auto;
+}
+h1 {
+	color: white;
+	font-size: 19vw;
+    display: inline-block;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    position: relative;
+	left: 10px;
+}
+h2 {
+	color: white;
+	font-size: 6vw;
+	display: flex;
+	justify-content: flex-end;
+    position: relative;
+    top: -30px; 
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+h3 {
+	color: white;
+	font-size: 2vw;
+	display: flex;
+	justify-content: flex-start;
+    position: relative;
+    top: -8vw;
+	left: 10px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#nav-container {
+	width: 30%;
+	height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
+	position: fixed;
+	top: 0;
+	right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#navigation a {
+	font-size: 5vw;
+	color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+	
+/* About Me Section */
+
+#aboutme-container {
+	display: flex;
+}
+#aboutme-wrapper {
+	margin-bottom: auto;
+	margin-top: auto;
+	position: relative;
+	left: 10px;
+}
+h4 {
+	color: white;
+	font-size: 12vw;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#navigation-aboutme {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#navigation-aboutme a {
+	font-size: 3vw;
+	color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#aboutme-textcontainer {
+	width: 40%;
+	height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
+	position: fixed;
+	right: 0;
+	display: flex;
+	justify-content: center;
+}
+#aboutme-text {
+	margin-bottom: auto;
+	margin-top: auto;
+}
+#aboutme-text p{
+	color: white;
+	font-size: 2vw;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+	
+/* Portfolio Section */
+	h5 {
+		color: white;
+		font-size: 12vw;
+		text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+	}
+
+}

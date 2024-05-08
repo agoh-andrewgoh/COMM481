@@ -3,44 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <title>Project 1</title>
+<style>
+@font-face {
+    font-family: Midnight;
+    src: url('fonts/Midnight.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto Regular';
+src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+</style>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     var dropdowns = document.querySelectorAll('.dropdown');
 
     dropdowns.forEach(function(dropdown) {
+        var dropdownContent = dropdown.querySelector('.dropdown-content');
+
         dropdown.addEventListener('mouseover', function() {
-            var dropdownContent = this.querySelector('.dropdown-content');
-            var dropdownItems = dropdownContent.children;
-            var dropdownHeight = 0;
-
-            for (var i = 0; i < dropdownItems.length; i++) {
-                var itemHeight = dropdownItems[i].offsetHeight;
-                var itemStyles = window.getComputedStyle(dropdownItems[i]);
-                var itemMarginTop = parseInt(itemStyles.marginTop);
-                var itemMarginBottom = parseInt(itemStyles.marginBottom);
-                var itemPaddingTop = parseInt(itemStyles.paddingTop);
-                var itemPaddingBottom = parseInt(itemStyles.paddingBottom);
-                var itemBorderTop = parseInt(itemStyles.borderTopWidth);
-                var itemBorderBottom = parseInt(itemStyles.borderBottomWidth);
-
-                dropdownHeight += itemHeight + itemMarginTop + itemMarginBottom + itemPaddingTop + itemPaddingBottom + itemBorderTop + itemBorderBottom;
-            }
-
-            dropdownContent.style.maxHeight = dropdownHeight + 'px';
+            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
         });
 
         dropdown.addEventListener('mouseleave', function() {
-            var dropdownContent = this.querySelector('.dropdown-content');
             dropdownContent.style.maxHeight = '0';
         });
     });
 });
 </script>
 <link href= "css/project1.css" rel="stylesheet" type="text/css">
-<link href= "../css/reset.css" rel="stylesheet" type="text/css">
+<link href= "css/reset.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
+<h1>ANDREW</h1>
 	
 <div id="container">
 	<div id = "sprites">
@@ -85,9 +81,14 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         </div>
         <div class="dropdown">
-            <a href = "#" class="dropbutton">Past Work</a>
+            <a href = "#" class="dropbutton">My Work</a>
             <div class="dropdown-content">
                 <a href="https://agoh-andrewgoh.github.io/COMM380/index.html" target="_blank">COMM380</a>
+				<a href="inclass/week5/week5.html" onclick="window.open(this.href, 'popupWindow', 'width=1200,height=1200'); return false;">Oh Nuts!</a>
+                <a href="inclass/week6/week6.html" target="_blank">Shelly</a>
+				<a href="project2/Project2(Home).html" target="_blank">Project 2</a>
+				<a href="inclass/week11/week11-more-transitions/week11.html" target="_blank">Sandwich</a>
+				<a href="project3/project3.html" target="_blank">Project 3</a>
             </div>
         </div>
     </div>
