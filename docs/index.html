@@ -22,14 +22,6 @@ function changeBackground(image) {
     document.body.style.backgroundImage = "url('" + image + "')";
 }
 </script>
-<script src="Build/UnityLoader.js"></script>
-<script>
-    var gameInstance;
-
-    function loadUnityGame() {
-        gameInstance = UnityLoader.instantiate("gameContainer", "Build/FightOn.json", {onProgress: UnityProgress});
-    }
-</script>
 <link href= "css/desktop.css" rel="stylesheet" type="text/css">
 <link href= "css/ipad.css" rel="stylesheet" type="text/css">
 <link href= "css/mobile.css" rel="stylesheet" type="text/css">
