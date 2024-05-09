@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 <meta charset="UTF-8">
 <title>Andrew Goh</title>
@@ -14,31 +15,44 @@ function showAboutMe() {
     document.getElementById("home-container").style.display = "none";    
     document.getElementById("aboutme-container").style.display = "flex";
     document.getElementById("portfolio-container").style.display = "none";
+    document.getElementById("contact-container").style.display = "none";
 }
 function showHome() {
     document.getElementById("home-container").style.display = "flex";    
     document.getElementById("aboutme-container").style.display = "none";
     document.getElementById("portfolio-container").style.display = "none";
+    document.getElementById("contact-container").style.display = "none";
 }
 function showPortfolio() {
     document.getElementById("home-container").style.display = "none";    
     document.getElementById("aboutme-container").style.display = "none";
     document.getElementById("portfolio-container").style.display = "block";
+    document.getElementById("contact-container").style.display = "none";
+}
+function showContact() {
+    document.getElementById("home-container").style.display = "none";    
+    document.getElementById("aboutme-container").style.display = "none";
+    document.getElementById("portfolio-container").style.display = "none";
+    document.getElementById("contact-container").style.display = "block";
 }
 function changeBackground(image) {
     document.body.style.backgroundImage = "url('" + image + "')";
 }
 </script>
+
 <link href= "css/desktop.css" rel="stylesheet" type="text/css">
 <link href= "css/ipad.css" rel="stylesheet" type="text/css">
 <link href= "css/mobile.css" rel="stylesheet" type="text/css">
 <link href= "css/reset.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	
 </head>
 <body>	
 
 <!-- This is for Home -->
 
-<div id = "home-container" style="display: none;">
+<div id = "home-container">
 	<div id = "header-container">
 		<h1>Andrew</h1>
 		<h2>Goh</h2>
@@ -49,7 +63,7 @@ function changeBackground(image) {
 		<div id = "navigation">
 			<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>			
 			<a href="#" onclick="showPortfolio(); changeBackground('images/terra2.jpg')">Portfolio</a>
-			<a href="#">Contact</a>
+			<a href="#" onclick="showContact(); changeBackground('images/terra3.jpg')">Contact</a>
 		</div>
 	</div>
 </div>
@@ -61,7 +75,7 @@ function changeBackground(image) {
 			<div id = "navigation-aboutme">
 				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
 				<a href="#" onclick="showPortfolio(); changeBackground('images/terra2.jpg')">Portfolio</a>
-				<a href="#" >Contact</a>
+				<a href="#" onclick="showContact(); changeBackground('images/terra3.jpg')">Contact</a>
 			</div>
 	</div>
 	<div id = "aboutme-textcontainer">
@@ -79,15 +93,93 @@ function changeBackground(image) {
 		<div id = "navigation-portfolio">
 				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
 				<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>
-				<a href="#" >Contact</a>
+				<a href="#" onclick="showContact(); changeBackground('images/terra3.jpg')">Contact</a>
 		</div>
-	</div>
+			</div>
 		<div id = "navigation-plist">
 			<a href="https://agoh-andrewgoh.github.io/COMM380/index.html" target="_blank">COMM380 Website</a>
 			<a href="project1/project1.html" target="_blank">COMM481 Website</a>
-        	<a href="https://agohwaffles.itch.io/fight-on" target="_blank">Fight On! Unity Game</a>		
+        	<a href="https://agohwaffles.itch.io/fight-on" target="_blank">Fight On! Unity Game</a>	
+			<a href="https://portfolium.com/agoh/portfolio " target="_blank">CSUF Portfolium</a>	
+
+		</div>
+		<div id="carousel-wrapper">
+					<div id="carousel-container" class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="images/0_Goh.png" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/01_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/02_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/03_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/04_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/05_Goh.png" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/06_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/07_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/08_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/09_Goh.png" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/10_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/11_Goh.jpg" alt="#">
+							</div>
+							<div class="swiper-slide">
+								<img src="images/12_Goh.jpg" alt="#">
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
 		</div>
 </div>
 	
+<!-- This is for Contact-->	
+<div id = "contact-container" style="display: none;">
+	<div id = "contact-wrapper">
+		<h6>Contact</h6>
+			<div id = "navigation-contact">
+				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
+				<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>
+				<a href="#" onclick="showPortfolio(); changeBackground('images/terra2.jpg')">Portfolio</a>
+		</div>
+	</div>
+		<div id = "contact-list">
+				<p>E-mails: agoh.andrewgoh@gmail.com</p>
+				<p>andrew@blkdotcoffee.com</p>
+				<a href="https://www.linkedin.com/in/andrewgoh359/" target="_blank">LinkedIn</a>		
+		</div>
+</div>
+	
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+</script>
 </body>
 </html>
