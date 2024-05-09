@@ -22,6 +22,14 @@ function changeBackground(image) {
     document.body.style.backgroundImage = "url('" + image + "')";
 }
 </script>
+<script src="Build/UnityLoader.js"></script>
+<script>
+    var gameInstance;
+
+    function loadUnityGame() {
+        gameInstance = UnityLoader.instantiate("gameContainer", "Build/FightOn.json", {onProgress: UnityProgress});
+    }
+</script>
 <link href= "css/desktop.css" rel="stylesheet" type="text/css">
 <link href= "css/ipad.css" rel="stylesheet" type="text/css">
 <link href= "css/mobile.css" rel="stylesheet" type="text/css">
@@ -78,8 +86,7 @@ function changeBackground(image) {
 		<div id = "navigation-plist">
 			<a href="https://agoh-andrewgoh.github.io/COMM380/index.html" >COMM380 Website</a>
 			<a href="project1/project1.html" >COMM481 Website</a>
-			<a href= "FightOn/index.html" >Fight On! (Unity Game)</a>
-		</div>
+        	<a href="FightOn/index.html" target="_blank">Fight On! (Unity Game)</a>		</div>
 </div>
 	
 </body>
