@@ -13,10 +13,17 @@ src: url('fonts/Roboto-Regular.ttf') format('truetype');
 function showAboutMe() {
     document.getElementById("home-container").style.display = "none";    
     document.getElementById("aboutme-container").style.display = "flex";
+    document.getElementById("portfolio-container").style.display = "none";
 }
 function showHome() {
     document.getElementById("home-container").style.display = "flex";    
     document.getElementById("aboutme-container").style.display = "none";
+    document.getElementById("portfolio-container").style.display = "none";
+}
+function showPortfolio() {
+    document.getElementById("home-container").style.display = "none";    
+    document.getElementById("aboutme-container").style.display = "none";
+    document.getElementById("portfolio-container").style.display = "block";
 }
 function changeBackground(image) {
     document.body.style.backgroundImage = "url('" + image + "')";
@@ -40,9 +47,9 @@ function changeBackground(image) {
 
 	<div id ="nav-container">
 		<div id = "navigation">
-	<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>			
-			<a href="#" onclick="changeBackground('terra2.jpg')">Portfolio</a>
-			<a href="#" onclick="changeBackground('terranew.jpg')">Contact</a>
+			<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>			
+			<a href="#" onclick="showPortfolio(); changeBackground('images/terra2.jpg')">Portfolio</a>
+			<a href="#">Contact</a>
 		</div>
 	</div>
 </div>
@@ -52,8 +59,8 @@ function changeBackground(image) {
 	<div id = "aboutme-wrapper">	
 		<h4>About Me</h4>
 			<div id = "navigation-aboutme">
-				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">About Me</a>			
-				<a href="#" >Portfolio</a>
+				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
+				<a href="#" onclick="showPortfolio(); changeBackground('images/terra2.jpg')">Portfolio</a>
 				<a href="#" >Contact</a>
 			</div>
 	</div>
@@ -66,19 +73,19 @@ function changeBackground(image) {
 	
 <!-- This is for Portfolio-->	
 	
-<div id = "portfolio-container">
+<div id = "portfolio-container" style="display: none;">
 	<div id = "portfolio-wrapper">
 		<h5>Portfolio</h5>
 		<div id = "navigation-portfolio">
-				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">About Me</a>			
-				<a href="#" >Portfolio</a>
+				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
+				<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>
 				<a href="#" >Contact</a>
 		</div>
 	</div>
 		<div id = "navigation-plist">
-			<a href="https://agoh-andrewgoh.github.io/COMM380/index.html" >COMM380 Website</a>
-			<a href="project1/project1.html" >COMM481 Website</a>
-        	<a href="https://agohwaffles.itch.io/fight-on" target="_blank">Fight On! (Unity Game)</a>		
+			<a href="https://agoh-andrewgoh.github.io/COMM380/index.html" target="_blank">COMM380 Website</a>
+			<a href="project1/project1.html" target="_blank">COMM481 Website</a>
+        	<a href="https://agohwaffles.itch.io/fight-on" target="_blank">Fight On! Unity Game</a>		
 		</div>
 </div>
 	
