@@ -8,7 +8,7 @@ body {
 	background-image: url("../images/terranew.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #121C6A;
+	background-color: black;
     display: flex;
 }
 #home-container {
