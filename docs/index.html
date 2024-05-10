@@ -9,31 +9,81 @@
 font-family: 'Roboto Regular';
 src: url('fonts/Roboto-Regular.ttf') format('truetype');
 }
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in.active {
+    opacity: 1;
+}
+.fade-in-slow {
+    opacity: 0;
+    transition: opacity 1s ease-in-out 0.75s; 
+}
+.fade-in-slow.active {
+    opacity: 1;
+}
 </style>
 <script>
-function showAboutMe() {
-    document.getElementById("home-container").style.display = "none";    
-    document.getElementById("aboutme-container").style.display = "flex";
-    document.getElementById("portfolio-container").style.display = "none";
-    document.getElementById("contact-container").style.display = "none";
+function fadeIn(element) {
+    // Reset opacity
+    element.style.opacity = '0';
+
+    // Apply fade-in effect
+    setTimeout(function() {
+        element.style.opacity = '1';
+    }, 100);
 }
+document.addEventListener("DOMContentLoaded", function() {
+    fadeIn(document.querySelector('.fade-in'));
+    fadeIn(document.querySelector('.fade-in-slow'));
+});
+
 function showHome() {
     document.getElementById("home-container").style.display = "flex";    
     document.getElementById("aboutme-container").style.display = "none";
     document.getElementById("portfolio-container").style.display = "none";
     document.getElementById("contact-container").style.display = "none";
+
+    // Apply fade-in effect
+    fadeIn(document.querySelector('.fade-in'));
+    fadeIn(document.querySelector('.fade-in-slow'));
 }
+	
+function showAboutMe() {
+    // Hide all sections except About Me
+    document.getElementById("home-container").style.display = "none";    
+    document.getElementById("aboutme-container").style.display = "flex";
+    document.getElementById("portfolio-container").style.display = "none";
+    document.getElementById("contact-container").style.display = "none";
+
+    // Apply fade-in effect to elements in About Me section
+    fadeIn(document.querySelector('#aboutme-container .fade-in'));
+    fadeIn(document.querySelector('#aboutme-container .fade-in-slow'));
+}
+
 function showPortfolio() {
+    // Hide all sections except Contact
     document.getElementById("home-container").style.display = "none";    
     document.getElementById("aboutme-container").style.display = "none";
     document.getElementById("portfolio-container").style.display = "block";
     document.getElementById("contact-container").style.display = "none";
+
+    // Apply fade-in effect to elements in Contact section
+    fadeIn(document.querySelector('#portfolio-container .fade-in'));
+    fadeIn(document.querySelector('#portfolio-container .fade-in-slow'));
 }
+
 function showContact() {
+    // Hide all sections except Contact
     document.getElementById("home-container").style.display = "none";    
     document.getElementById("aboutme-container").style.display = "none";
     document.getElementById("portfolio-container").style.display = "none";
     document.getElementById("contact-container").style.display = "block";
+
+    // Apply fade-in effect to elements in Contact section
+    fadeIn(document.querySelector('#contact-container .fade-in'));
+    fadeIn(document.querySelector('#contact-container .fade-in-slow'));
 }
 function changeBackground(image) {
     document.body.style.backgroundImage = "url('" + image + "')";
@@ -53,13 +103,13 @@ function changeBackground(image) {
 <!-- This is for Home -->
 
 <div id = "home-container">
-	<div id = "header-container">
+	<div id = "header-container" class = "fade-in">
 		<h1>Andrew</h1>
 		<h2>Goh</h2>
 		<h3>Bananas and Apples</h3>
 	</div>
 
-	<div id ="nav-container">
+	<div id ="nav-container" class = "fade-in-slow">
 		<div id = "navigation">
 			<a href="#" onclick="showAboutMe(); changeBackground('images/terra-rain.jpg')">About Me</a>			
 			<a href="#" onclick="showPortfolio(); changeBackground('images/terra2.jpg')">Portfolio</a>
@@ -70,7 +120,7 @@ function changeBackground(image) {
 
 <!-- This is for About Me -->
 <div id = "aboutme-container" style="display: none;">
-	<div id = "aboutme-wrapper">	
+	<div id = "aboutme-wrapper" class = "fade-in">	
 		<h4>About Me</h4>
 			<div id = "navigation-aboutme">
 				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
@@ -78,7 +128,7 @@ function changeBackground(image) {
 				<a href="#" onclick="showContact(); changeBackground('images/terra3.jpg')">Contact</a>
 			</div>
 	</div>
-	<div id = "aboutme-textcontainer">
+	<div id = "aboutme-textcontainer" class = "fade-in-slow">
 		<div id = "aboutme-text">
 				<p>It starts with success</p>
 			</div>
@@ -101,7 +151,6 @@ function changeBackground(image) {
 			<a href="project1/project1.html" target="_blank">COMM481 Website</a>
         	<a href="https://agohwaffles.itch.io/fight-on" target="_blank">Fight On! Unity Game</a>	
 			<a href="https://portfolium.com/agoh/portfolio " target="_blank">CSUF Portfolium</a>	
-
 		</div>
 		<div id="carousel-wrapper">
 					<div id="carousel-container" class="swiper-container">
@@ -154,7 +203,7 @@ function changeBackground(image) {
 	
 <!-- This is for Contact-->	
 <div id = "contact-container" style="display: none;">
-	<div id = "contact-wrapper">
+	<div id = "contact-wrapper" class = "fade-in">
 		<h6>Contact</h6>
 			<div id = "navigation-contact">
 				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
@@ -162,13 +211,15 @@ function changeBackground(image) {
 				<a href="#" onclick="showPortfolio(); changeBackground('images/terra2.jpg')">Portfolio</a>
 		</div>
 	</div>
-		<div id = "contact-list">
+		<div id = "contact-list" class = "fade-in-slow">
 				<p>E-mails: agoh.andrewgoh@gmail.com</p>
 				<p>andrew@blkdotcoffee.com</p>
 				<a href="https://www.linkedin.com/in/andrewgoh359/" target="_blank">LinkedIn</a>		
 		</div>
 </div>
 	
+<!-- Handles Images in Portfolio -->	
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {

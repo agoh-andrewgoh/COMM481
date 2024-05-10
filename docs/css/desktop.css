@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @media only screen and (min-width: 1205px){
-
 html, body {
 	height: 100vh;
 }
@@ -64,7 +63,6 @@ h3 {
 	color: white;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
-	
 /* About Me Section */
 
 #aboutme-container {
@@ -108,10 +106,9 @@ h4 {
 	color: white;
 	font-size: 2vw;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
-}
+}	
 	
 /* Portfolio Section */
-	
 #portfolio-container {
 	display: block;
 }	
@@ -211,5 +208,5 @@ h6 {
 	color: white;
 	font-size: 3vw;
 	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
-}
+}	
 }
