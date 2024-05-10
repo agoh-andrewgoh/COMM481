@@ -70,8 +70,10 @@ function showPortfolio() {
     document.getElementById("contact-container").style.display = "none";
 
     // Apply fade-in effect to elements in Contact section
-    fadeIn(document.querySelector('#portfolio-container .fade-in'));
-    fadeIn(document.querySelector('#portfolio-container .fade-in-slow'));
+	var portfolioElements = document.querySelectorAll('#portfolio-container .fade-in, #portfolio-container .fade-in-slow');
+    portfolioElements.forEach(function(element) {
+    fadeIn(element);
+    });
 }
 
 function showContact() {
@@ -138,7 +140,7 @@ function changeBackground(image) {
 <!-- This is for Portfolio-->	
 	
 <div id = "portfolio-container" style="display: none;">
-	<div id = "portfolio-wrapper">
+	<div id = "portfolio-wrapper" class = "fade-in">
 		<h5>Portfolio</h5>
 		<div id = "navigation-portfolio">
 				<a href="#" onclick="showHome(); changeBackground('images/terra.jpg')">Home</a>			
@@ -146,13 +148,13 @@ function changeBackground(image) {
 				<a href="#" onclick="showContact(); changeBackground('images/terra3.jpg')">Contact</a>
 		</div>
 			</div>
-		<div id = "navigation-plist">
+		<div id = "navigation-plist" class = "fade-in">
 			<a href="https://agoh-andrewgoh.github.io/COMM380/index.html" target="_blank">COMM380 Website</a>
 			<a href="project1/project1.html" target="_blank">COMM481 Website</a>
         	<a href="https://agohwaffles.itch.io/fight-on" target="_blank">Fight On! Unity Game</a>	
 			<a href="https://portfolium.com/agoh/portfolio " target="_blank">CSUF Portfolium</a>	
 		</div>
-		<div id="carousel-wrapper">
+		<div id="carousel-wrapper" class = "fade-in">
 					<div id="carousel-container" class="swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
