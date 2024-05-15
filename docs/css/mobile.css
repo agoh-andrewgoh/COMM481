@@ -11,7 +11,7 @@ body {
     display: flex;
 }
 @font-face {
-font-family: 'Roboto Regular';
+font-family: 'Roboto';
 src: url('fonts/Roboto-Regular.ttf') format('truetype');
 }
 #home-container {
@@ -51,7 +51,7 @@ h3 {
 }
 #nav-container {
     display: flex;
-	position: fixed;
+	position: absolute;
 	right: 0;
 	left: 0;
 	justify-content: center;
@@ -228,7 +228,7 @@ html, body {
 	height: 100vh;
 }
 @font-face {
-font-family: 'Roboto Regular';
+font-family: 'Roboto';
 src: url('fonts/Roboto-Regular.ttf') format('truetype');
 }
 body {
