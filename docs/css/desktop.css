@@ -11,10 +11,6 @@ body {
 	background-color: black;
     display: flex;
 }
-@font-face {
-font-family: 'Roboto';
-src: url('fonts/Roboto-Regular.ttf') format('truetype');
-}
 #home-container {
 	margin-bottom: auto;
 	margin-top: auto;
