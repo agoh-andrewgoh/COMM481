@@ -226,60 +226,56 @@ body {
     display: flex;
 }
 #home-container {
-	margin-right: auto;
-	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: auto;
 }
 h1 {
 	color: white;
-	font-size: 28vw;
+	font-size: 19vw;
     display: inline-block;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
     position: relative;
-	text-decoration: underline;
+	left: 10px;
 }
 h2 {
 	color: white;
-	font-size: 18vw;
+	font-size: 6vw;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: flex-end;
     position: relative;
-    top: -5px; 
-	left: 0px;
-	text-decoration: underline;
+    top: -20px; 
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 h3 {
 	color: white;
-	font-size: 4vw;
+	font-size: 2vw;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: flex-start;
     position: relative;
-    top: 0;
-	left: 0px;
+    top: -8vw;
+	left: 10px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 #nav-container {
-    display: flex;
+	width: 30%;
+	height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
 	position: fixed;
+	top: 0;
 	right: 0;
-	left: 0;
-	justify-content: center;
-	text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 #navigation {
 	display: flex;
 	flex-direction: column;
-	top: 60vw;
-	position: fixed;
+	justify-content: flex-end;
 }
 #navigation a {
-	font-size: 12vw;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	font-size: 5vw;
 	color: white;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 100px;
-	padding: 10px;
 }
 /* About Me Section */
 
@@ -368,9 +364,7 @@ h5 {
     position: absolute;
     width: 75%;
     margin: 0 auto;
-	margin-top: 300px;
 	overflow: hidden;
-  	top: 50%;
     left: 0;
 	right: 0;
 }
