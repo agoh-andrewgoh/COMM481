@@ -183,7 +183,7 @@ h5 {
 }
 h6 {
 	color: white;
-	font-size: 15vw;
+	font-size: 16vw;
 	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }	
 #navigation-contact {
@@ -194,7 +194,7 @@ h6 {
 }
 #navigation-contact a{
 	color: white;
-	font-size: 3vw;
+	font-size: 4vw;
 }
 #contact-list {
 	display: flex;
@@ -206,7 +206,7 @@ h6 {
 }
 #contact-list p,a {
 	color: white;
-	font-size: 3vw;
+	font-size: 4vw;
 	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }		
 }
