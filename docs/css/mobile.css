@@ -156,12 +156,11 @@ h5 {
 	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 #carousel-wrapper {
-    position: absolute;
+    position: fixed;
     width: 75%;
     margin: 0 auto;
-	margin-top: 25px;
 	overflow: hidden;
-  	top: 30%;
+  	top: 35%;
     left: 0;
 	right: 0;
 }
@@ -215,7 +214,7 @@ h6 {
 	margin-top: 1vw;
 	margin-bottom: 1vw;
 
-}
+}	
 }
 
 /* Below are additoinal phone sizes */
@@ -229,7 +228,7 @@ body {
 	font-family: 'Roboto';
 	background-image: url("../images/terranew.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-color: black;
     display: flex;
 }
@@ -381,9 +380,9 @@ h5 {
     position: absolute;
     width: 75%;
     margin: 0 auto;
-	margin-top: 250px;
+	margin-top: 260px;
 	overflow: hidden;
-  	top: 35%;
+  	top: 50%;
     left: 0;
 	right: 0;
 }

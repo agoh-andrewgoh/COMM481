@@ -6,7 +6,7 @@ body {
 	font-family: 'Roboto';
 	background-image: url("../images/terranew.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-color: black;
     display: flex;
 }
@@ -154,7 +154,6 @@ h5 {
     width: 100%;
     margin: 0 auto;
 	margin-top: 50px;
-	background: black;
 	overflow: hidden;
     left: 0;
 	right: 0;
