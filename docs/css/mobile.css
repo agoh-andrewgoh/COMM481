@@ -8,8 +8,11 @@ body {
 	background-image: url("../images/terranew.jpg");
 	background-size: cover;
 	background-repeat: repeat;
-	background-color: black;
     display: flex;
+}
+@font-face {
+font-family: 'Roboto Regular';
+src: url('fonts/Roboto-Regular.ttf') format('truetype');
 }
 #home-container {
 	margin-right: auto;
@@ -223,6 +226,10 @@ h6 {
 @media only screen and (min-width: 600px) and (max-width: 767px){
 html, body {
 	height: 100vh;
+}
+@font-face {
+font-family: 'Roboto Regular';
+src: url('fonts/Roboto-Regular.ttf') format('truetype');
 }
 body {
 	font-family: 'Roboto';
