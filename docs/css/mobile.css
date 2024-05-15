@@ -31,7 +31,6 @@ h2 {
     position: relative;
     top: -5px; 
 	left: 0px;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 	text-decoration: underline;
 }
 h3 {
@@ -43,11 +42,10 @@ h3 {
     position: relative;
     top: 0;
 	left: 0px;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 #nav-container {
     display: flex;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	left: 0;
 	justify-content: center;
@@ -56,8 +54,8 @@ h3 {
 #navigation {
 	display: flex;
 	flex-direction: column;
-	top: 6vw;
-	position: absolute;
+	top: 55vw;
+	position: fixed;
 }
 #navigation a {
 	font-size: 12vw;
@@ -83,7 +81,6 @@ h3 {
 h4 {
 	color: white;
 	font-size: 20vw;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 	text-decoration: underline;
 }
 #navigation-aboutme {
@@ -128,7 +125,6 @@ h4 {
 h5 {
 	color: white;
 	font-size: 20vw;
-	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 #navigation-portfolio {
 	display: flex;
@@ -155,7 +151,7 @@ h5 {
 	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 #carousel-wrapper {
-    position: absolute;
+    position: fixed;
     width: 75%;
     margin: 0 auto;
 	overflow: hidden;
@@ -186,7 +182,6 @@ h5 {
 h6 {
 	color: white;
 	font-size: 20vw;
-	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 	text-decoration: underline;
 }	
 #navigation-contact {
