@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 599px){
 html, body {
 	height: 100vh;
 }
@@ -156,9 +156,232 @@ h5 {
 	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 #carousel-wrapper {
-    position: fixed;
+    position: absolute;
     width: 75%;
     margin: 0 auto;
+	margin-top: 25px;
+	overflow: hidden;
+  	top: 30%;
+    left: 0;
+	right: 0;
+}
+.swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.swiper-slide img {
+    max-width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+/* Contact Section */
+#contact-container {
+	display: block;
+	margin: 0 auto;
+}	
+#contact-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h6 {
+	color: white;
+	font-size: 20vw;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+	text-decoration: underline;
+}	
+#navigation-contact {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#navigation-contact a{
+	color: white;
+	font-size: 6vw;
+	margin-top: 5vw;
+}
+#contact-list {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+	margin-top: 10vw;
+}
+#contact-list p,a {
+	color: white;
+	font-size: 6vw;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+
+}
+}
+
+/* Below are additoinal phone sizes */
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px){
+html, body {
+	height: 100vh;
+}
+body {
+	font-family: 'Roboto';
+	background-image: url("../images/terranew.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+    display: flex;
+}
+#home-container {
+	margin-right: auto;
+	margin-left: auto;
+}
+h1 {
+	color: white;
+	font-size: 28vw;
+    display: inline-block;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    position: relative;
+	text-decoration: underline;
+}
+h2 {
+	color: white;
+	font-size: 18vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    position: relative;
+    top: -5px; 
+	left: 0px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+	text-decoration: underline;
+}
+h3 {
+	color: white;
+	font-size: 4vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    position: relative;
+    top: 0;
+	left: 0px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#nav-container {
+    display: flex;
+	position: fixed;
+	right: 0;
+	left: 0;
+	justify-content: center;
+	text-align: center;
+}
+#navigation {
+	display: flex;
+	flex-direction: column;
+	top: 60vw;
+	position: fixed;
+}
+#navigation a {
+	font-size: 12vw;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 100px;
+	padding: 10px;
+}
+/* About Me Section */
+
+#aboutme-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+#aboutme-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+h4 {
+	color: white;
+	font-size: 20vw;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+	text-decoration: underline;
+}
+#navigation-aboutme {
+	display: flex;
+	justify-content: space-between;
+}
+#navigation-aboutme a {
+	font-size: 6vw;
+	color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#aboutme-textcontainer {
+	display: flex;
+}
+#aboutme-text {
+	margin: 0 auto;
+	margin-top: 150px;
+}
+#aboutme-text p{
+	color: white;
+	font-size: 3vw;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 5vw;
+}	
+	
+/* Portfolio Section */
+	
+#portfolio-container {
+	display: block;
+	margin: 0 auto;
+}	
+#portfolio-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	position: relative;
+}
+#navigation-portfolio {
+	position: relative;
+}	
+h5 {
+	color: white;
+	font-size: 20vw;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#navigation-portfolio {
+	display: flex;
+	justify-content: space-between;
+}
+#navigation-portfolio a{
+	color: white;
+	font-size: 6vw;
+}
+#navigation-plist {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+    top: 5vw;
+	margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+	width: 50%;
+	text-align: center;
+}
+#navigation-plist a {
+	color: white;
+	padding: 1vw;
+	font-size: 4vw;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+#carousel-wrapper {
+    position: absolute;
+    width: 75%;
+    margin: 0 auto;
+	margin-top: 250px;
 	overflow: hidden;
   	top: 35%;
     left: 0;
@@ -214,5 +437,5 @@ h6 {
 	margin-top: 1vw;
 	margin-bottom: 1vw;
 
-}	
+}
 }
