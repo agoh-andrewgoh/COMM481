@@ -199,10 +199,11 @@ h6 {
 #contact-list {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	position: relative;
     left: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-	width: 60%;
+	width: 55vw;
 }
 #contact-list p,a {
 	color: white;
