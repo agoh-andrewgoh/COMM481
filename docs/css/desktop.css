@@ -72,6 +72,8 @@ h3 {
 #aboutme-wrapper {
 	margin-bottom: auto;
 	margin-top: auto;
+	display:flex;
+	flex-direction: column;
 	position: relative;
 	left: 10px;
 }
