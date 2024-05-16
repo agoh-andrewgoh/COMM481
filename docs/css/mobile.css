@@ -154,7 +154,7 @@ h5 {
     width: 75%;
     margin: 0 auto;
 	overflow: hidden;
-  	margin-top: 0px;
+	margin-top: 20px;
     left: 0;
 	right: 0;
 }
@@ -367,6 +367,7 @@ h5 {
 	overflow: hidden;
     left: 0;
 	right: 0;
+	margin-top: 25px;
 }
 .swiper-slide {
     display: flex !important;
